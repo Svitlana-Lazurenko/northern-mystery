@@ -6,8 +6,14 @@ if (!defined('_VERSION')) {
 	define('_VERSION', '1.0.0');
 }
 
-// Include styles and scripts
+// Styles and scripts
 require get_template_directory() . '/inc/_scripts.php';
 
-// Post types
+// Custom post types
 require get_template_directory() . '/inc/_post-types.php';
+
+// Navigation menus
+require get_template_directory() . '/inc/_nav-menus.php';
+
+// ACF blocks
+require get_template_directory() . '/inc/_acf-blocks.php';

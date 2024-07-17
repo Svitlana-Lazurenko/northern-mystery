@@ -1,0 +1,16 @@
+header {
+  #header-menu {
+    // Menu-items
+    & > li {
+      // Links
+      & > a {
+        &:hover {
+        }
+      }
+
+      // Current menu-item
+      &.current-menu-item {
+      }
+    }
+  }
+}
