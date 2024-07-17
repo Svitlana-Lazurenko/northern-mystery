@@ -1,4 +1,10 @@
 <?php
+/*
+Template Name: Project Page
+Template Post Type: project
+*/
+
+
 get_header();
 the_post();
 ?>
