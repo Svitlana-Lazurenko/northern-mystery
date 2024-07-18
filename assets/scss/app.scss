@@ -83,18 +83,18 @@
 }
 
 /*-----------------------------------------
-# Base
------------------------------------------*/
-@import "base/reset";
-@import "base/common";
-
-/*-----------------------------------------
 # Utils
 -----------------------------------------*/
 @import "utils/variables";
 @import "utils/placeholders";
 @import "utils/mixins";
 @import "utils/hidden";
+
+/*-----------------------------------------
+# Base
+-----------------------------------------*/
+@import "base/reset";
+@import "base/common";
 
 /*-----------------------------------------
 # Components
