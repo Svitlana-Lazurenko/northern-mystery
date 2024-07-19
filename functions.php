@@ -18,8 +18,5 @@ require get_template_directory() . '/inc/_post-types.php';
 // Navigation menus
 require get_template_directory() . '/inc/_nav-menus.php';
 
-// ACF blocks
-require get_template_directory() . '/inc/_acf-blocks.php';
-
 // ACF options page
 require get_template_directory() . '/inc/_acf-options-page.php';

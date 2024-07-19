@@ -1,90 +1,7 @@
 /*-----------------------------------------
-# Fonts
------------------------------------------*/
-@font-face {
-  font-family: "Ubuntu";
-  src: url("../fonts/Ubuntu/ubuntu-light.woff2"),
-    url("../fonts/Ubuntu/ubuntu-light.woff");
-  font-weight: 300;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Ubuntu";
-  src: url("../fonts/Ubuntu/ubuntu-regular.woff2"),
-    url("../fonts/Ubuntu/ubuntu-regular.woff");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Ubuntu";
-  src: url("../fonts/Ubuntu/ubuntu-medium.woff2"),
-    url("../fonts/Ubuntu/ubuntu-medium.woff");
-  font-weight: 500;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Ubuntu";
-  src: url("../fonts/Ubuntu/ubuntu-bold.woff2"),
-    url("../fonts/Ubuntu/ubuntu-bold.woff");
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Ubuntu";
-  src: url("../fonts/Ubuntu/ubuntu-light-italic.woff2"),
-    url("../fonts/Ubuntu/ubuntu-light-italic.woff");
-  font-weight: 300;
-  font-display: swap;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Ubuntu";
-  src: url("../fonts/Ubuntu/ubuntu-regular-italic.woff2"),
-    url("../fonts/Ubuntu/ubuntu-regular-italic.woff");
-  font-weight: 400;
-  font-display: swap;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Ubuntu";
-  src: url("../fonts/Ubuntu/ubuntu-medium-italic.woff2"),
-    url("../fonts/Ubuntu/ubuntu-medium-italic.woff");
-  font-weight: 500;
-  font-display: swap;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Ubuntu";
-  src: url("../fonts/Ubuntu/ubuntu-bold-italic.woff2"),
-    url("../fonts/Ubuntu/ubuntu-bold-italic.woff");
-  font-weight: 700;
-  font-display: swap;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Arkhip";
-  src: url("../fonts/Arkhip/arkhip-regular.woff2"),
-    url("../fonts/Arkhip/arkhip-regular.woff");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-
-/*-----------------------------------------
 # Utils
 -----------------------------------------*/
+@import "utils/fonts";
 @import "utils/variables";
 @import "utils/placeholders";
 @import "utils/mixins";
@@ -110,3 +27,11 @@
   -----------------------------------------*/
 @import "layouts/header";
 @import "layouts/footer";
+
+@import "layouts/hero";
+@import "layouts/main-skills";
+@import "layouts/recent-projects";
+@import "layouts/projects";
+@import "layouts/about";
+@import "layouts/contacts";
+@import "layouts/project";
