@@ -13,9 +13,13 @@
 
     <header>
         <div class="container">
-            <a href="<?php echo home_url(); ?>" class="logo">
-                Logo <img src="" alt="" />
-            </a>
+
+            <?php $logo = get_field('logo', 'option'); ?>
+            <?php if ($logo <> '') : ?>
+                <a href="<?php echo home_url(); ?>" class="logo">
+                    <img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" />
+                </a>
+            <?php endif; ?>
 
             <?php
             wp_nav_menu([

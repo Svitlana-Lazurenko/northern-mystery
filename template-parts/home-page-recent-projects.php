@@ -8,9 +8,15 @@
 foreach ($post_projects as $post) :
     setup_postdata($post);
 ?>
+
     <div class="">
-        <h3><?php the_title(); ?></h3>
-        <?php the_content(); ?>
+        <a href="<?php the_permalink(); ?>">
+            <h2><?php the_title(); ?></h2>
+        </a>
+        <p><?php the_excerpt(); ?></p>
+        <a href="<?php the_permalink(); ?>">
+            <img src="<?php the_post_thumbnail_url(get_the_ID(), 'thumbnail') ?>" alt="" />
+        </a>
     </div>
 
 <?php

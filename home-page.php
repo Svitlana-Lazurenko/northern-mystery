@@ -10,7 +10,7 @@ get_header(); ?>
 
 get_template_part('template-parts/home-page', 'hero');
 
-get_template_part('template-parts/home-page', 'main-skills');
+get_template_part('template-parts/home-page', 'selected-skills');
 
 get_template_part('template-parts/home-page', 'recent-projects');
 
