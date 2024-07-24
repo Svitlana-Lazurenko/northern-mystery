@@ -111,35 +111,48 @@ get_header(); ?>
                 </div>
             <?php endif; ?>
 
-            <?php if (have_rows('education')) : ?>
-                <div class="">
-                    <?php while (have_rows('education')) : the_row(); ?>
-                        <?php
-                        $specialty_education = get_sub_field('specialty-education');
-                        $educational_institution = get_sub_field('educational_institution');
-                        $start_and_end_of_education = get_sub_field('start_&_end_of_education');
-                        $achievments = get_sub_field('achievments');
-                        ?>
 
-                        <?php if ($specialty_education <> '') : ?>
-                            <span><?php echo $specialty_education; ?></span>
-                        <?php endif; ?>
 
-                        <?php if ($educational_institution <> '') : ?>
-                            <span><?php echo $educational_institution; ?></span>
-                        <?php endif; ?>
+            <?php
+            function show_education_block()
+            {
+                $show = get_field('show_education');
+                if (!$show) return;
 
-                        <?php if ($start_and_end_of_education <> '') : ?>
-                            <span><?php echo $start_and_end_of_education; ?></span>
-                        <?php endif; ?>
+                if (have_rows('education')) : ?>
 
-                        <?php if ($achievments <> '') : ?>
-                            <span><?php echo $achievments; ?></span>
-                        <?php endif; ?>
+                    <div class="">
+                        <?php while (have_rows('education')) : the_row(); ?>
+                            <?php
+                            $specialty_education = get_sub_field('specialty-education');
+                            $educational_institution = get_sub_field('educational_institution');
+                            $start_and_end_of_education = get_sub_field('start_&_end_of_education');
+                            $achievments = get_sub_field('achievments');
+                            ?>
 
-                    <?php endwhile; ?>
-                </div>
-            <?php endif; ?>
+                            <?php if ($specialty_education <> '') : ?>
+                                <span><?php echo $specialty_education; ?></span>
+                            <?php endif; ?>
+
+                            <?php if ($educational_institution <> '') : ?>
+                                <span><?php echo $educational_institution; ?></span>
+                            <?php endif; ?>
+
+                            <?php if ($start_and_end_of_education <> '') : ?>
+                                <span><?php echo $start_and_end_of_education; ?></span>
+                            <?php endif; ?>
+
+                            <?php if ($achievments <> '') : ?>
+                                <span><?php echo $achievments; ?></span>
+                            <?php endif; ?>
+
+                        <?php endwhile; ?>
+                    </div>
+
+            <?php endif;
+            }
+
+            show_education_block(); ?>
 
         </div>
 

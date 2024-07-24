@@ -44,7 +44,7 @@ $link = get_field('link_to_project');
                     <?php $technology = get_sub_field('technology'); ?>
 
                     <?php if ($technology <> '') : ?>
-                        <span><?php echo $name; ?></span>
+                        <span><?php echo $technology; ?></span>
                     <?php endif; ?>
 
                 <?php endwhile; ?>
