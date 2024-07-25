@@ -1,6 +1,4 @@
 <footer>
-    <?php wp_footer(); ?>
-
     <?php $text = get_field('text', 'option'); ?>
     <?php if ($text <> '') : ?>
         <div><?php echo $text; ?></div>
@@ -51,14 +49,12 @@
                     <a class="" href="<?php $viber; ?>">Viber</a>
                 <?php endif; ?>
 
-
             <?php endwhile; ?>
         </div>
     <?php endif; ?>
-
 </footer>
 
-
+<?php wp_footer(); ?>
 </body>
 
 </html>

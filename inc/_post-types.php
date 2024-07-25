@@ -22,7 +22,7 @@ function register_post_types()
 		'has_archive' 	=> true,
 		'show_in_rest' 	=> true,
 		'menu_icon' 	=> 'dashicons-portfolio',
-		'rewrite' 		=> array('slug' => 'projects'),
+		'rewrite' 		=> array('slug' => 'works'),
 		'supports' 		=> array('title', 'editor', 'thumbnail', 'excerpt'),
 	));
 }
