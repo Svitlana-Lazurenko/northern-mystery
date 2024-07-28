@@ -56,4 +56,6 @@ get_header(); ?>
     </div>
 <?php endif; ?>
 
+<?php echo apply_shortcodes('[contact-form-7 id="30d47f5" title="Contact form" html_class="contact-form"]') ?>
+
 <?php get_footer(); ?>
