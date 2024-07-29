@@ -1,0 +1,11 @@
+<svg width="400" height="400" viewBox="0 0 400 400"
+    xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <path id="circlePath" d="M 200, 200 m -150, 0 a 150,150 0 1,1 300,0 a 150,150 0 1,1 -300,0" />
+    </defs>
+    <text font-size="20" fill="green">
+        <textPath href="#circlePath" textLength="942">
+                    AAAA code code code code code code code code code code code code code
+        </textPath>
+    </text>
+</svg>

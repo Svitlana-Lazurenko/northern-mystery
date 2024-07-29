@@ -20,9 +20,13 @@
             <div><?php echo $greeting; ?></div>
         <?php endif; ?>
 
+        <a href="" download="">Download CV</a>
+
         <?php if ($photo <> '') : ?>
             <img src="<?php echo $photo['url']; ?>" alt="<?php echo $photo['alt']; ?>" />
         <?php endif; ?>
+
+        <img src="<?php echo get_template_directory_uri() . '/assets/svg/circle-text.svg'; ?>" />
 
     </div>
 </section>

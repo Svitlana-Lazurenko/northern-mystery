@@ -11,13 +11,12 @@
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
 
-    <header>
+    <header class="header">
         <div class="container">
-
             <?php $logo = get_field('logo', 'option'); ?>
             <?php if ($logo <> '') : ?>
                 <a href="<?php echo home_url(); ?>" class="logo">
-                    <img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" />
+                    <img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" class="logo__img" />
                 </a>
             <?php endif; ?>
 
