@@ -22,11 +22,14 @@
 
         <a href="" download="">Download CV</a>
 
-        <?php if ($photo <> '') : ?>
-            <img src="<?php echo $photo['url']; ?>" alt="<?php echo $photo['alt']; ?>" />
-        <?php endif; ?>
 
-        <img src="<?php echo get_template_directory_uri() . '/assets/svg/circle-text.svg'; ?>" />
+        <div class="" style="background-image: url(<?php echo get_template_directory_uri() . '/assets/svg/tree.svg'; ?>)">
+            <div class="" style="background-image: url(<?php echo get_template_directory_uri() . '/assets/svg/circle-text.svg'; ?>)">
+                <?php if ($photo <> '') : ?>
+                    <img src="<?php echo $photo['url']; ?>" alt="<?php echo $photo['alt']; ?>" />
+                <?php endif; ?>
+            </div>
+        </div>
 
     </div>
 </section>
