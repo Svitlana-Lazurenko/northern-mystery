@@ -1,6 +1,7 @@
-<section id="home-skills" class="hero">
+<section class="selected-skills">
     <div class="container">
 
+        <h2 class="selected-skills__title">My skills</h2>
 
         <?php
         $skills = get_field('skills');
@@ -17,11 +18,11 @@
                             ?>
 
                                 <?php if ($name <> '') : ?>
-                                    <h3><?php echo $name; ?></h3>
+                                    <h3 class="skill-item__title"><?php echo $name; ?></h3>
                                 <?php endif; ?>
 
                                 <?php if ($image <> '') : ?>
-                                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                                    <img class="skill-item__img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                                 <?php endif; ?>
 
                             <?php endwhile; ?>
@@ -31,6 +32,8 @@
                 <?php endwhile; ?>
             </div>
         <?php endif; ?>
+
+        <a class="btn-secondary" href="<?php echo home_url() . '/about'; ?>">More skills</a>
 
     </div>
 </section>

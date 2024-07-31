@@ -11,52 +11,55 @@ $type = get_field('type_of_project');
 $image = get_field('image_of_project');
 $description = get_field('description_of_project');
 $completed_works = get_field('completed_works');
-$studio_or_company = get_field('studio_or_company');
+$company = get_field('studio_or_company');
 $link = get_field('link_to_project');
 ?>
 
-<section id="project" class="project">
+<section class="project">
     <div class="container">
 
         <?php if ($name <> '') : ?>
-            <div><?php echo $name; ?></div>
+            <h1 class="project__title"><?php echo $name; ?></h1>
         <?php endif; ?>
 
         <?php if ($type <> '') : ?>
-            <div><?php echo $type; ?></div>
+            <p class="project__type"><?php echo $type; ?></p>
         <?php endif; ?>
 
         <?php if ($image <> '') : ?>
-            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+            <img class="project__img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
         <?php endif; ?>
 
         <?php if ($description <> '') : ?>
-            <div><?php echo $description; ?></div>
+            <p class="project__description"><?php echo $description; ?></p>
         <?php endif; ?>
 
         <?php if ($completed_works <> '') : ?>
-            <div><?php echo $completed_works; ?></div>
+            <p class="project__works"><?php echo $completed_works; ?></p>
         <?php endif; ?>
 
-        <?php if (have_rows('technologies')) : ?>
-            <div class="technologies-wrapper">
-                <?php while (have_rows('technologies')) : the_row(); ?>
-                    <?php $technology = get_sub_field('technology'); ?>
+        <div class="project__technologies">
+            <span class="project__technologies-title">Technologies:</span>
+            <?php if (have_rows('technologies')) : ?>
+                <ul class="project__technologies-wrapper">
+                    <?php while (have_rows('technologies')) : the_row(); ?>
+                        <?php $technology = get_sub_field('technology'); ?>
 
-                    <?php if ($technology <> '') : ?>
-                        <span><?php echo $technology; ?></span>
-                    <?php endif; ?>
+                        <?php if ($technology <> '') : ?>
+                            <li class="project__technology"><?php echo $technology; ?></li>
+                        <?php endif; ?>
 
-                <?php endwhile; ?>
-            </div>
-        <?php endif; ?>
+                    <?php endwhile; ?>
+                </ul>
+            <?php endif; ?>
+        </div>
 
-        <?php if ($studio_or_company <> '') : ?>
-            <div><?php echo $studio_or_company; ?></div>
+        <?php if ($company <> '') : ?>
+            <p class="project__company">Studio/Company: <?php echo $company; ?></p>
         <?php endif; ?>
 
         <?php if ($link <> '') : ?>
-            <a class="" href="<?php echo $link['url']; ?>"><?php echo $link['title']; ?></a>
+            <a class="project__link" href="<?php echo $link['url']; ?>" target="_blank" rel="noopener noreferrer">Open the project</a>
         <?php endif; ?>
 
     </div>

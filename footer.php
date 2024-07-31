@@ -1,4 +1,4 @@
-<footer>
+<footer class="footer">
     <?php $text = get_field('text', 'option'); ?>
     <?php if ($text <> '') : ?>
         <div class="footer-text"><?php echo $text; ?></div>
@@ -19,39 +19,41 @@
                 <?php $viber = get_sub_field('viber'); ?>
 
                 <?php if ($phone <> '') : ?>
-                    <a class="footer-contacts__contact" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', $phone); ?>"><img class="footer-contacts__phone" src="<?php echo get_template_directory_uri() . '/assets/svg/phone.svg'; ?>" alt="phone" /><?php echo $phone ?></a>
+                    <a class="footer-contacts__contact" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', $phone); ?>"><img class="footer-contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/phone.svg'; ?>" alt="phone" /><?php echo $phone ?></a>
                 <?php endif; ?>
                 <?php if ($email <> '') : ?>
-                    <a class="footer-contacts__contact" href="mail:<?php echo $email; ?>"><img class="footer-contacts__email" src="<?php echo get_template_directory_uri() . '/assets/svg/email.svg'; ?>" alt="email" /><?php echo $email; ?></a>
+                    <a class="footer-contacts__contact" href="mail:<?php echo $email; ?>"><img class="footer-contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/email.svg'; ?>" alt="email" /><?php echo $email; ?></a>
                 <?php endif; ?>
                 <?php if ($linkedin <> '') : ?>
-                    <a class="footer-contacts__contact" href="<?php $linkedin; ?>" target="_blank" rel="noopener noreferrer nofollow"><img class="footer-contacts__linkedin" src="<?php echo get_template_directory_uri() . '/assets/svg/linkedin.svg'; ?>" alt="linkedin" />LinkedIn</a>
+                    <a class="footer-contacts__contact" href="<?php $linkedin; ?>" target="_blank" rel="noopener noreferrer nofollow"><img class="footer-contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/linkedin.svg'; ?>" alt="linkedin" />LinkedIn</a>
                 <?php endif; ?>
                 <?php if ($github <> '') : ?>
-                    <a class="footer-contacts__contact" href="<?php $github; ?>" target="_blank" rel="noopener noreferrer nofollow"><img class="footer-contacts__github" src="<?php echo get_template_directory_uri() . '/assets/svg/github.svg'; ?>" alt="github" />GitHub</a>
+                    <a class="footer-contacts__contact" href="<?php $github; ?>" target="_blank" rel="noopener noreferrer nofollow"><img class="footer-contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/github.svg'; ?>" alt="github" />GitHub</a>
                 <?php endif; ?>
                 <?php if ($facebook <> '') : ?>
-                    <a class="footer-contacts__contact" href="<?php $facebook; ?>" target="_blank" rel="noopener noreferrer nofollow"><img class="footer-contacts__facebook" src="<?php echo get_template_directory_uri() . '/assets/svg/facebook.svg'; ?>" alt="facebook" />Facebook</a>
+                    <a class="footer-contacts__contact" href="<?php $facebook; ?>" target="_blank" rel="noopener noreferrer nofollow"><img class="footer-contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/facebook.svg'; ?>" alt="facebook" />Facebook</a>
                 <?php endif; ?>
                 <?php if ($instagram <> '') : ?>
-                    <a class="footer-contacts__contact" href="<?php $instagram; ?>" target="_blank" rel="noopener noreferrer nofollow"><img class="footer-contacts__instagram" src="<?php echo get_template_directory_uri() . '/assets/svg/instagram.svg'; ?>" alt="instagram" />Instagram</a>
+                    <a class="footer-contacts__contact" href="<?php $instagram; ?>" target="_blank" rel="noopener noreferrer nofollow"><img class="footer-contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/instagram.svg'; ?>" alt="instagram" />Instagram</a>
                 <?php endif; ?>
                 <?php if ($skype <> '') : ?>
-                    <a class="footer-contacts__contact" href="<?php $skype; ?>" target="_blank" rel="noopener noreferrer nofollow"><img class="footer-contacts__skype" src="<?php echo get_template_directory_uri() . '/assets/svg/skype.svg'; ?>" alt="skype" />Skype</a>
+                    <a class="footer-contacts__contact" href="<?php $skype; ?>" target="_blank" rel="noopener noreferrer nofollow"><img class="footer-contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/skype.svg'; ?>" alt="skype" />Skype</a>
                 <?php endif; ?>
                 <?php if ($whatsup <> '') : ?>
-                    <a class="footer-contacts__contact" href="<?php $whatsup; ?>" target="_blank" rel="noopener noreferrer nofollow"><img class="footer-contacts__whatsup" src="<?php echo get_template_directory_uri() . '/assets/svg/whatsup.svg'; ?>" alt="whatsup" />WhatsUp</a>
+                    <a class="footer-contacts__contact" href="<?php $whatsup; ?>" target="_blank" rel="noopener noreferrer nofollow"><img class="footer-contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/whatsup.svg'; ?>" alt="whatsup" />WhatsUp</a>
                 <?php endif; ?>
                 <?php if ($telegram <> '') : ?>
-                    <a class="footer-contacts__contact" href="<?php $telegram; ?>" target="_blank" rel="noopener noreferrer nofollow"><img class="footer-contacts__telegram" src="<?php echo get_template_directory_uri() . '/assets/svg/telegram.svg'; ?>" alt="telegram" />Telegram</a>
+                    <a class="footer-contacts__contact" href="<?php $telegram; ?>" target="_blank" rel="noopener noreferrer nofollow"><img class="footer-contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/telegram.svg'; ?>" alt="telegram" />Telegram</a>
                 <?php endif; ?>
                 <?php if ($viber <> '') : ?>
-                    <a class="footer-contacts__contact" href="<?php $viber; ?>" target="_blank" rel="noopener noreferrer nofollow"><img class="footer-contacts__viber" src="<?php echo get_template_directory_uri() . '/assets/svg/viber.svg'; ?>" alt="viber" />Viber</a>
+                    <a class="footer-contacts__contact" href="<?php $viber; ?>" target="_blank" rel="noopener noreferrer nofollow"><img class="footer-contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/viber.svg'; ?>" alt="viber" />Viber</a>
                 <?php endif; ?>
 
             <?php endwhile; ?>
         </div>
     <?php endif; ?>
+
+    <p>Designed & developed with ❤️ by Svitlana Lazurenko (svitlasvit)</p>
 </footer>
 
 <?php wp_footer(); ?>

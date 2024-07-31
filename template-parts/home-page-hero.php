@@ -1,4 +1,4 @@
-<section id="home-hero" class="hero">
+<section class="hero">
     <div class="container">
 
         <?php
@@ -10,15 +10,15 @@
         ?>
 
         <?php if ($name <> '') : ?>
-            <div class="hero-name"><?php echo $name; ?></div>
+            <h1 class="hero-name">Hello! I am <?php echo $name; ?></h1>
         <?php endif; ?>
 
         <?php if ($specialty <> '') : ?>
-            <div class="hero-specialty"><?php echo $specialty; ?></div>
+            <h2 class="hero-specialty"><?php echo $specialty; ?></h2>
         <?php endif; ?>
 
         <?php if ($greeting <> '') : ?>
-            <div class="greeting"><?php echo $greeting; ?></div>
+            <p class="greeting"><?php echo $greeting; ?></p>
         <?php endif; ?>
 
         <?php if ($resume <> '') : ?>
@@ -26,7 +26,7 @@
         <?php endif; ?>
 
         <div class="hero-img">
-            <div class="hero-img__tree" style="width: 800px; height: 800px; background-image: url(<?php echo get_template_directory_uri() . '/assets/svg/tree.svg'; ?>); background-size: cover;">
+            <div class="hero-img__tree" style="background-image: url(<?php echo get_template_directory_uri() . '/assets/svg/tree.svg'; ?>);">
                 <div class="hero-img__lettering" style="background-image: url(<?php echo get_template_directory_uri() . '/assets/svg/circle-text.svg'; ?>)">
                     <?php if ($photo <> '') : ?>
                         <img class="hero-img__photo" src="<?php echo $photo['url']; ?>" alt="<?php echo $photo['alt']; ?>" />
