@@ -14,7 +14,7 @@ get_template_part('template-parts/about-page', 'main-info');
 
 get_template_part('template-parts/about-page', 'experience');
 
-get_template_part('template-parts/about-page', 'sertificates');
+get_template_part('template-parts/about-page', 'documents');
 
 ?>
 

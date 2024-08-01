@@ -9,6 +9,7 @@ get_header(); ?>
 <section class="contacts">
     <div class="container">
         <h1 class="contacts__title">Contacts</h1>
+        <p class="contacts__call">Do you have a question or proposal for cooperation? Contact me 😊</p>
 
         <div class="contacts__wrapper">
             <?php if (have_rows('contacts', 'option')) : ?>
