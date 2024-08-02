@@ -16,12 +16,13 @@
                             if (have_rows('diploma')) :
                                 while (have_rows('diploma')) : the_row();
                                     $diploma = get_sub_field('file_of_diploma');
+                                    $diploma_caption = $diploma['caption'];
                                     $diploma_specialty = get_sub_field('diploma-specialty');
                                     $diploma_institution = get_sub_field('diploma-institution');
                         ?>
                                     <li class="document">
-                                        <?php if ($diploma <> '') : ?>
-                                            <img class="document__img" src="<?php echo $diploma['thumbnail']; ?>" alt="<?php echo $diploma['caption']; ?>" />
+                                        <?php if ($diploma <> '' && $diploma_caption <> '') : ?>
+                                            <?php echo wp_get_attachment_image($diploma['id'], 'medium', 'false', array('class' => 'document__img', 'alt' => $diploma_caption)); ?>
                                         <?php endif; ?>
 
                                         <?php if ($diploma_specialty <> '') : ?>
@@ -66,7 +67,7 @@
                                     $certificate_institution = get_sub_field('certificate-institution');
                         ?>
                                     <li class="document">
-                                        <?php if ($certificate <> '') : ?>
+                                        <?php if ($certificate <> '' && $certificate_caption <> '') : ?>
                                             <?php echo wp_get_attachment_image($certificate['id'], 'medium', 'false', array('class' => 'document__img', 'alt' => $certificate_caption)); ?>
                                         <?php endif; ?>
 
