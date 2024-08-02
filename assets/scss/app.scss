@@ -19,9 +19,10 @@
 @import "components/container";
 @import "components/typography";
 @import "components/logo";
+@import "components/buttons";
 @import "components/social";
 @import "components/contact-form";
-@import "components/buttons";
+@import "components/mobile-menu";
 
 /*-----------------------------------------
 # Layouts
@@ -33,6 +34,8 @@
 @import "layouts/main-skills";
 @import "layouts/recent-projects";
 @import "layouts/projects";
-@import "layouts/about";
+@import "layouts/main-info";
+@import "layouts/experience";
+@import "layouts/documents";
 @import "layouts/contacts";
 @import "layouts/project";

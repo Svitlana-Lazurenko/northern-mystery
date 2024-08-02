@@ -56,6 +56,11 @@
     <p>Designed & developed with ❤️ by Svitlana Lazurenko (svitlasvit)</p>
 </footer>
 
+<div class="menu-container js-menu-container">
+    <button type="button" class="menu-button js-close-menu">Close</button>
+    <p>MENU</p>
+</div>
+
 <?php wp_footer(); ?>
 </body>
 
