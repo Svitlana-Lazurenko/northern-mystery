@@ -1,4 +1,5 @@
 <footer class="footer">
+
     <?php $text = get_field('text', 'option'); ?>
     <?php if ($text <> '') : ?>
         <div class="footer-text"><?php echo $text; ?></div>

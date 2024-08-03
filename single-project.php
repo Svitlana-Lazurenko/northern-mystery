@@ -38,9 +38,10 @@ $link = get_field('link_to_project');
             <p class="project__works"><?php echo $completed_works; ?></p>
         <?php endif; ?>
 
-        <div class="project__technologies">
-            <span class="project__technologies-title">Technologies:</span>
-            <?php if (have_rows('technologies')) : ?>
+
+        <?php if (have_rows('technologies')) : ?>
+            <div class="project__technologies">
+                <span class="project__technologies-title">Technologies:</span>
                 <ul class="project__technologies-wrapper">
                     <?php while (have_rows('technologies')) : the_row(); ?>
                         <?php $technology = get_sub_field('technology'); ?>
@@ -51,8 +52,8 @@ $link = get_field('link_to_project');
 
                     <?php endwhile; ?>
                 </ul>
-            <?php endif; ?>
-        </div>
+            </div>
+        <?php endif; ?>
 
         <?php if ($company <> '') : ?>
             <p class="project__company">Studio/Company: <?php echo $company; ?></p>

@@ -27,6 +27,7 @@
         </div>
 
         <div class="skills">
+
             <?php if (have_rows('skills')) : ?>
                 <div class="mini-skills">
                     <h2 class="mini-skills__title">My skills</h2>
@@ -44,24 +45,20 @@
             <?php if (have_rows('languages')) : ?>
                 <div class="languages">
                     <h2 class="languages__title">Languages</h2>
-                    <?php while (have_rows('languages')) : the_row(); ?>
-                        <?php if (have_rows('language')) : ?>
-                            <ul class="languages__list">
-                                <li class="languages__language">
-                                    <?php while (have_rows('language')) : the_row();
-                                        $name = get_sub_field('name_of_language');
-                                        $level = get_sub_field('level_of_language'); ?>
-                                        <?php if ($name <> '') : ?>
-                                            <span class="languages__name"><?php echo $name; ?></span>
-                                        <?php endif; ?>
-                                        <?php if ($level <> '') : ?>
-                                            <span class="languages__level"> - <?php echo $level; ?> level</span>
-                                        <?php endif; ?>
-                                    <?php endwhile; ?>
-                                </li>
-                            </ul>
-                        <?php endif; ?>
-                    <?php endwhile; ?>
+                    <ul class="languages__list">
+                        <?php while (have_rows('languages')) : the_row();
+                            $name = get_sub_field('name_of_language');
+                            $level = get_sub_field('level_of_language'); ?>
+                            <li class="languages__language">
+                                <?php if ($name <> '') : ?>
+                                    <span class="languages__name"><?php echo $name; ?></span>
+                                <?php endif; ?>
+                                <?php if ($level <> '') : ?>
+                                    <span class="languages__level"> - <?php echo $level; ?></span>
+                                <?php endif; ?>
+                            </li>
+                        <?php endwhile; ?>
+                    </ul>
                 </div>
             <?php endif; ?>
 
@@ -78,6 +75,8 @@
                     </ul>
                 </div>
             <?php endif; ?>
+
+
         </div>
 
     </div>

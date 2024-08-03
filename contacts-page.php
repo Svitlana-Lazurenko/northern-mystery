@@ -12,6 +12,7 @@ get_header(); ?>
         <p class="contacts__call">Do you have a question or proposal for cooperation? Contact me 😊</p>
 
         <div class="contacts__wrapper">
+
             <?php if (have_rows('contacts', 'option')) : ?>
                 <div class="contacts__contacts">
                     <?php while (have_rows('contacts', 'option')) : the_row(); ?>

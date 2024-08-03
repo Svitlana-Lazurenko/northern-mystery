@@ -2,8 +2,8 @@
     <div class="container">
 
         <!--------------------- Work experience ---------------------------->
-        <div class="work-experience">
-            <?php if (have_rows('work_experience')) : ?>
+        <?php if (have_rows('work_experience')) : ?>
+            <div class="work-experience">
                 <h2 class="work-experience__title">Work experience</h2>
                 <ul class="work-experience__list">
                     <?php while (have_rows('work_experience')) : the_row(); ?>
@@ -25,8 +25,9 @@
                                 <span class="work-experience-card__time"><?php echo $start_and_end_of_work; ?></span>
                             <?php endif; ?>
 
-                            <div class="work-experience-card-ach">
-                                <?php if (have_rows('responsibilities_&_achievements')) : ?>
+
+                            <?php if (have_rows('responsibilities_&_achievements')) : ?>
+                                <div class="work-experience-card-ach">
                                     <h4 class="work-experience-card-ach__title">Responsibilities and achievements:</h4>
                                     <ul class="work-experience-card-ach__list">
                                         <?php while (have_rows('responsibilities_&_achievements')) : the_row(); ?>
@@ -36,24 +37,26 @@
                                             <?php endif; ?>
                                         <?php endwhile; ?>
                                     </ul>
-                                <?php endif; ?>
-                            </div>
+                                </div>
+                            <?php endif; ?>
                         <?php endwhile; ?>
                         </li>
                 </ul>
-            <?php endif; ?>
-        </div>
+            </div>
+        <?php endif; ?>
+
         <!--------------------- End of work experience ---------------------------->
 
         <!--------------------- Education with switch ---------------------------->
-        <div class="education">
-            <?php
-            function show_education_block()
-            {
-                $show = get_field('show_education');
-                if (!$show) return;
 
-                if (have_rows('education')) : ?>
+        <?php
+        function show_education_block()
+        {
+            $show = get_field('show_education');
+            if (!$show) return;
+
+            if (have_rows('education')) : ?>
+                <div class="education">
                     <h2 class="education__title">Education</h2>
 
                     <ul class="education__list">
@@ -76,21 +79,21 @@
                                     <span class="education-card__time"><?php echo $start_and_end_of_education; ?></span>
                                 <?php endif; ?>
 
-                                <div class="education-card-ach">
-                                    <?php if ($achievments <> '') : ?>
+                                <?php if ($achievments <> '') : ?>
+                                    <div class="education-card-ach">
                                         <h4 class="education-card-ach__title">Achievments:</h4>
                                         <p class="education-card-ach__text"><?php echo $achievments; ?></p>
-                                    <?php endif; ?>
-                                </div>
+                                    </div>
+                                <?php endif; ?>
                             </li>
-
                         <?php endwhile; ?>
                     </ul>
-            <?php endif;
-            }
+                </div>
+        <?php endif;
+        }
 
-            show_education_block(); ?>
-        </div>
+        show_education_block(); ?>
+
         <!--------------------- End of education ---------------------------->
 
     </div>
