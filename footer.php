@@ -58,7 +58,15 @@
 
 <div class="menu-container js-menu-container">
     <button type="button" class="menu-button js-close-menu">Close</button>
-    <p>MENU</p>
+    <?php
+    wp_nav_menu([
+        'theme_location' => "mobile_menu",
+        'menu_id' => 'mobile-menu',
+        'container' => 'nav',
+        'container_class' => 'mobile-menu',
+        'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+    ]);
+    ?>
 </div>
 
 <?php wp_footer(); ?>
