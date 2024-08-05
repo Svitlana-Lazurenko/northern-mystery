@@ -1,7 +1,14 @@
+body {
+  font-family: $font-base;
+  color: $color-light;
+}
+
 h1 {
+  font-family: $font-accent;
 }
 
 h2 {
+  font-family: $font-accent;
 }
 
 h3 {

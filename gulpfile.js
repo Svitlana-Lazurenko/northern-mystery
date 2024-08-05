@@ -2,11 +2,7 @@
 
 const jsWatch = ["./assets/js/app.js"],
   jsFiles = ["./assets/js/app.js", "./assets/js/*.js", "!./assets/js/*.min.js"],
-  cssWatch = [
-    "./assets/scss/*.scss",
-    "./assets/scss/layout/*.scss",
-    "./assets/scss/admin_menu/*.scss",
-  ],
+  cssWatch = ["./assets/scss/*.scss", "./assets/scss/**/*.scss"],
   cssFiles = ["./assets/scss/app.scss"];
 
 // Initialize modules
@@ -76,5 +72,5 @@ function watchTask() {
 
 // Export the default Gulp task, so it can be run
 // Runs the scss and js tasks simultaneously
-// then runs cacheBust, then watch task
+// then watch task
 exports.default = series(parallel(scssTask, jsTask), watchTask);

@@ -1,3 +1,34 @@
-.hero-img__tree {
-  background-size: cover;
+.hero {
+  background-color: $color-primary;
+
+  &-info {
+    &__greeting {
+      font-family: $font-base;
+      font-weight: 300;
+      margin-bottom: rem(10);
+    }
+    &__greeting--name {
+      font-size: rem(55);
+      font-family: $font-accent;
+      line-height: 1.1;
+    }
+    &__specialty {
+      font-family: $font-base;
+      font-weight: 300;
+      font-size: rem(40);
+      margin-bottom: rem(50);
+    }
+    &__text {
+    }
+  }
+
+  &-img {
+    &__tree {
+      background-size: cover;
+    }
+    &__lettering {
+    }
+    &__photo {
+    }
+  }
 }

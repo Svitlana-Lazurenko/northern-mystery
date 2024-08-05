@@ -11,7 +11,7 @@
 
         <div class="hero-info">
             <?php if ($name <> '') : ?>
-                <h1 class="hero-info__name">Hello! I am <?php echo $name; ?></h1>
+                <h1 class="hero-info__greeting">Hello! I am <span class="hero-info__greeting--name"><?php echo $name; ?></span></h1>
             <?php endif; ?>
 
             <?php if ($specialty <> '') : ?>
@@ -19,7 +19,7 @@
             <?php endif; ?>
 
             <?php if ($greeting <> '') : ?>
-                <p class="hero-info__greeting"><?php echo $greeting; ?></p>
+                <p class="hero-info__text"><?php echo $greeting; ?></p>
             <?php endif; ?>
 
             <?php if ($resume <> '') : ?>
