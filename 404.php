@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
-<p>Page not found</p>
+<main>
+    <p>Page not found</p>
+</main>
 
 <?php get_footer(); ?>

@@ -5,19 +5,19 @@
 @import "utils/variables";
 @import "utils/placeholders";
 @import "utils/mixins";
+@import "utils/functions";
 @import "utils/visually-hidden";
 
 /*-----------------------------------------
 # Base
 -----------------------------------------*/
-@import "base/reset";
 @import "base/common";
+@import "base/container";
+@import "base/typography";
 
 /*-----------------------------------------
 # Components
 -----------------------------------------*/
-@import "components/container";
-@import "components/typography";
 @import "components/logo";
 @import "components/buttons";
 @import "components/social";
@@ -39,3 +39,4 @@
 @import "layouts/documents";
 @import "layouts/contacts";
 @import "layouts/project";
+@import "layouts/404";
