@@ -16,8 +16,8 @@
 
             <?php $logo = get_field('logo', 'option'); ?>
             <?php if ($logo <> '') : ?>
-                <a href="<?php echo home_url(); ?>" class="logo">
-                    <img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" class="logo__img" />
+                <a class="logo" href="<?php echo home_url(); ?>">
+                    <img class="logo__img" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" />
                 </a>
             <?php endif; ?>
 
@@ -31,7 +31,9 @@
             ]);
             ?>
 
-            <button type="button" class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">Open</button>
+            <button type="button" class="menu-button js-open-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open mobile menu">
+                <img class="menu-button__icon" src="<?php echo get_template_directory_uri() . '/assets/svg/menu-hamburger.svg'; ?>" alt="Menu-hamburger." />
+            </button>
 
         </div>
     </header>

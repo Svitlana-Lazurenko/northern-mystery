@@ -1,4 +1,5 @@
 .menu-container {
+  transform: translateX(100%);
   position: fixed;
   top: 0;
   left: 0;
@@ -6,9 +7,8 @@
   height: 100vh;
   z-index: 999;
   background-color: #ffffff;
-  transform: translateX(100%);
-  transition: transform 400ms ease-in;
   padding: 50px;
+  transition: transform 400ms ease-in;
 }
 
 .menu-container.is-open {
