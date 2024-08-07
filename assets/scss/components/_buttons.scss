@@ -1,14 +1,39 @@
 .btn {
-  &--primary,
-  &--secondary {
-    &:hover {
-    }
+  padding: rem(20) 0;
+  width: rem(280);
+  height: rem(80);
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  border-radius: rem(7);
+  font-size: rem(30);
+  font-family: $font-base;
+  letter-spacing: rem(1.6);
+  @include media(md) {
+    padding: rem(17) 0;
+    font-size: rem(22);
+    width: rem(220);
+    height: rem(60);
+  }
+  @include media(def) {
+    padding: rem(20) 0;
+    font-size: rem(30);
+    width: rem(280);
+    height: rem(80);
   }
 
   &--primary {
+    background-color: rgb(102, 2, 84);
+    color: $color-light;
+    transition: background-color linear 0.4s;
+    &:hover {
+      background-color: rgb(124, 37, 108);
+    }
   }
 
   &--secondary {
+    &:hover {
+    }
   }
 }
 
