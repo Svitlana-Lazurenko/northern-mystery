@@ -1,6 +1,6 @@
 .hero {
   background-color: $color-primary;
-  padding-top: rem(30);
+  padding-top: rem(60);
   @include media(md) {
     padding-top: 0;
   }
@@ -49,15 +49,16 @@
       }
     }
     &__greeting--name {
-      font-size: rem(68);
+      font-size: rem(54);
       font-family: $font-base;
       font-weight: 500;
       line-height: 1.1;
+      letter-spacing: rem(2);
       @include media(sm) {
-        font-size: rem(99);
+        font-size: rem(85);
       }
       @include media(md) {
-        font-size: rem(65);
+        font-size: rem(54);
       }
       @include media(def) {
         font-size: rem(68);
@@ -83,26 +84,27 @@
         font-size: rem(25);
       }
       @include media(def) {
-        font-size: rem(30);
-      }
-      @include media(hg) {
         font-size: rem(35);
       }
-      @include media(mg) {
+      @include media(hg) {
         font-size: rem(40);
+      }
+      @include media(mg) {
+        font-size: rem(50);
       }
 
       &::after {
         content: "";
         display: block;
         width: 80%;
-        height: 2px;
+        height: 1px;
         background-color: $color-light;
         margin-top: rem(20);
       }
     }
     &__text {
       letter-spacing: rem(2);
+      font-weight: 300;
       margin-bottom: rem(40);
 
       @include media(sm) {

@@ -23,4 +23,12 @@
   &--full {
     max-width: 100%;
   }
+
+  &--flex {
+    display: flex;
+  }
+
+  .header > & {
+    justify-content: space-between;
+  }
 }

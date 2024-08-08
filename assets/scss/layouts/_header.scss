@@ -1,15 +1,58 @@
 header {
-  #header-menu {
-    // Menu-items
-    & > li {
-      // Links
-      & > a {
-        &:hover {
-        }
-      }
+  background-color: $color-primary;
 
-      // Current menu-item
-      &.current-menu-item {
+  .header-menu {
+    display: flex;
+    align-items: center;
+
+    & > .menu {
+      display: none;
+      @include media(md) {
+        display: flex;
+      }
+      // Menu-items
+      & > li {
+        &:not(:last-child) {
+          margin-right: rem(20);
+        }
+        &::after {
+          content: "";
+          display: block;
+          width: 0;
+          height: 1px;
+          background-color: $color-light;
+          margin-top: rem(3.5);
+          transition: width 1s linear;
+        }
+        &:hover {
+          &::after {
+            width: 100%;
+          }
+        }
+        // Current menu-item
+        &.current-menu-item {
+          &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: $color-light;
+            margin-top: rem(3.5);
+            transition: width 1s linear;
+          }
+        }
+        // Links
+        & > a {
+          color: $color-light;
+          font-size: rem(30);
+          font-weight: 300;
+          @include media(hg) {
+            font-size: rem(35);
+          }
+          @include media(mg) {
+            font-size: rem(40);
+          }
+        }
       }
     }
   }

@@ -38,8 +38,21 @@
 }
 
 .menu-button {
-  width: 20px;
-  height: 20px;
+  width: 22%;
+  aspect-ratio: 1 / 1;
+  display: block;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  @include media(psw) {
+    width: 15%;
+  }
+  @include media(ms) {
+    width: 10%;
+  }
+  @include media(md) {
+    display: none;
+  }
 
   &__icon {
   }

@@ -12,7 +12,7 @@
     <?php wp_body_open(); ?>
 
     <header class="header">
-        <div class="container">
+        <div class="container container--flex">
 
             <?php $logo = get_field('logo', 'option'); ?>
             <?php if ($logo <> '') : ?>
