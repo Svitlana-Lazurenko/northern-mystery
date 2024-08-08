@@ -10,10 +10,10 @@
   font-family: $font-base;
   letter-spacing: rem(1.6);
   @include media(md) {
-    padding: rem(17) 0;
-    font-size: rem(22);
-    width: rem(220);
-    height: rem(60);
+    padding: rem(13) 0;
+    font-size: rem(20);
+    width: rem(200);
+    height: rem(50);
   }
   @include media(def) {
     padding: rem(20) 0;
