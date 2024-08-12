@@ -52,6 +52,7 @@
       font-size: rem(54);
       font-family: $font-base;
       font-weight: 500;
+      text-transform: uppercase;
       line-height: 1.1;
       letter-spacing: rem(2);
       @include media(sm) {
@@ -139,10 +140,7 @@
       position: absolute;
       width: 100%;
       bottom: 0.8%;
-      animation-name: spin;
-      animation-duration: 35s;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
+      border-radius: 50%;
     }
     &__tree {
       width: 85%;

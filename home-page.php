@@ -7,7 +7,9 @@ Template Post Type: page
 get_header(); ?>
 
 <main>
+
     <div class="home-background" style="background-image: url(<?php echo get_template_directory_uri() . '/assets/images/lake-louise.webp'; ?>);"></div>
+
 
     <?php
 

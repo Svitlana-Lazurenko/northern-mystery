@@ -1,0 +1,22 @@
+.contacts {
+}
+.container {
+}
+.contacts__title {
+}
+.contacts__call {
+}
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  @include media(md) {
+    flex-direction: row;
+  }
+}
+.contacts__contacts {
+}
+.contacts__contact {
+}
+.contacts__img {
+  width: rem(50);
+}

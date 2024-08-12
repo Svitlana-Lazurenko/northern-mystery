@@ -10,20 +10,20 @@
                     $name = get_sub_field('name_of_skill');
                     $image = get_sub_field('image_of_skill');
                 ?>
-                    <li class="selected-skills__item">
-                        <?php if ($name <> '') : ?>
-                            <h3 class="selected-skills__title"><?php echo $name; ?></h3>
+                    <li class="selected-skill">
+                        <?php if ($image <> '') : ?>
+                            <img class="selected-skill__img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                         <?php endif; ?>
 
-                        <?php if ($image <> '') : ?>
-                            <img class="selected-skills__img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                        <?php if ($name <> '') : ?>
+                            <h3 class="selected-skill__title"><?php echo $name; ?></h3>
                         <?php endif; ?>
                     </li>
                 <?php endwhile; ?>
             </ul>
         <?php endif; ?>
 
-        <a class="btn-secondary" href="<?php echo home_url() . '/about'; ?>">More skills</a>
+        <a class="btn btn--primary" href="<?php echo home_url() . '/about'; ?>">More skills</a>
 
     </div>
 </section>

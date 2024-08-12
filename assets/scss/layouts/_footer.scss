@@ -1,0 +1,40 @@
+.footer {
+  background-color: $color-primary;
+  padding: rem(80) 0 rem(100);
+
+  &__text {
+    font-size: rem(20);
+    font-family: $font-accent;
+    text-align: center;
+    margin: 0 auto rem(40);
+    max-width: 80%;
+  }
+}
+
+.footer-contacts {
+  margin: 0 auto rem(60);
+  width: 96vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: rem(10);
+
+  &__contact {
+    flex-basis: calc((100% - rem(40)) / 5);
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid red;
+  }
+  &__img {
+  }
+}
+
+#signature {
+  text-align: center;
+  font-weight: 300;
+}
+#signature-link {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: rem(4);
+}

@@ -1,0 +1,161 @@
+.recent-projects {
+  padding: rem(100) 0 rem(130);
+  background-color: $color-accent;
+
+  &__title {
+    color: $color-light;
+    font-size: rem(58);
+    margin-bottom: rem(150);
+    text-align: end;
+    @include media(psw) {
+      font-size: rem(73);
+    }
+    @include media(md) {
+      font-size: rem(85);
+    }
+    @include media(hg) {
+      font-size: rem(90);
+    }
+    @include media(mg) {
+      font-size: rem(95);
+    }
+  }
+
+  &__wrapper {
+    margin-bottom: rem(120);
+    position: relative;
+  }
+
+  &__no-found {
+  }
+}
+
+.recent-project {
+  position: relative;
+  &::before,
+  &::after {
+    @include media(md) {
+      content: "";
+      display: block;
+      opacity: 11%;
+      height: 120%;
+      position: absolute;
+      bottom: 0;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: bottom;
+    }
+  }
+
+  &:nth-child(1)::before {
+    width: 17%;
+    background-image: url("../images/herb-1.webp");
+  }
+
+  &:nth-child(2)::after {
+    width: 19%;
+    right: 0;
+    background-image: url("../images/herb-5.webp");
+  }
+
+  &:nth-child(3)::before {
+    width: 16%;
+    background-image: url("../images/herb-7.webp");
+  }
+
+  &:not(:last-child) {
+    margin-bottom: rem(150);
+  }
+
+  &:nth-child(2n + 1) {
+    & .recent-project__img-link {
+      @include media(md) {
+        margin-left: auto;
+      }
+    }
+    & .recent-project__text-wrapper {
+      @include media(md) {
+        left: 5%;
+      }
+    }
+  }
+
+  &:nth-child(2n) {
+    text-align: right;
+    & .recent-project__text-wrapper {
+      @include media(md) {
+        right: 5%;
+      }
+    }
+  }
+
+  &:hover {
+    .recent-project__img {
+      transform: scale(1.05);
+      filter: saturate(2);
+    }
+  }
+
+  &__text-wrapper {
+    margin-bottom: rem(35);
+    @include media(md) {
+      width: 48%;
+      position: absolute;
+      margin-bottom: 0;
+    }
+  }
+  &__title {
+    font-size: rem(35);
+    margin-bottom: rem(15);
+    letter-spacing: rem(2);
+    @include media(psw) {
+      font-size: rem(48);
+    }
+    @include media(hg) {
+      font-size: rem(55);
+    }
+    @include media(mg) {
+      font-size: rem(65);
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: $color-light;
+      margin-top: rem(3.5);
+    }
+  }
+  &__title-link {
+    color: $color-secondary;
+  }
+  &__description {
+    color: $color-secondary;
+    font-size: rem(25);
+
+    @include media(psw) {
+      font-size: rem(30);
+    }
+    @include media(md) {
+      font-size: rem(21);
+    }
+    @include media(hg) {
+      font-size: rem(28);
+    }
+    @include media(mg) {
+      font-size: rem(32);
+    }
+  }
+  &__img-link {
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    @include media(md) {
+      width: 45%;
+    }
+  }
+  &__img {
+    transition: linear 0.5s;
+  }
+}

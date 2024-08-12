@@ -15,5 +15,6 @@
         <textPath href="#circlePath" textLength="942">
         ?php if &#10088;$description &lt;&gt; ''&#10089; : ?&gt; &lt;div&gt;&lt;?php echo $description; ?&gt;&lt;/div&gt; &lt;?php endif; ?&gt;   &lt;
         </textPath>
+        <animateTransform attributeName="transform" type="rotate" from="0 200 200" to="360 200 200" dur="25s" repeatCount="indefinite" />
     </text>
 </svg>
