@@ -4,17 +4,20 @@
   height: rem(80);
   margin: 0 auto;
   display: block;
-  text-align: center;
   border-radius: rem(7);
+
+  text-align: center;
   font-size: rem(30);
   font-family: $font-base;
   letter-spacing: rem(1.6);
+
   @include media(md) {
     padding: rem(12) 0;
     font-size: rem(20);
     width: rem(200);
     height: rem(50);
   }
+
   @include media(def) {
     padding: rem(20) 0;
     font-size: rem(30);
@@ -23,20 +26,20 @@
   }
 
   &--primary {
-    background-color: rgb(102, 2, 84);
+    background-color: $color-accent;
     color: $color-light;
     transition: background-color linear 0.4s;
     &:hover {
-      background-color: rgb(124, 37, 108);
+      background-color: $color-accent-light;
     }
   }
 
   &--secondary {
-    background-color: $color-secondary;
+    background-color: $color-primary;
     color: $color-light;
     transition: background-color linear 0.4s;
     &:hover {
-      background-color: #127559;
+      background-color: $color-primary-light;
     }
   }
 }

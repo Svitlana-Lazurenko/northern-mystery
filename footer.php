@@ -15,40 +15,40 @@
                 <?php $facebook = get_sub_field('facebook'); ?>
                 <?php $instagram = get_sub_field('instagram'); ?>
                 <?php $skype = get_sub_field('skype'); ?>
-                <?php $whatsup = get_sub_field('whatsup'); ?>
+                <?php $whatsapp = get_sub_field('whatsapp'); ?>
                 <?php $telegram = get_sub_field('telegram'); ?>
                 <?php $viber = get_sub_field('viber'); ?>
 
 
                 <?php if ($phone <> '') : ?>
-                    <a class="footer-contacts__contact" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', $phone); ?>"><img class="footer-contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/phone.svg'; ?>" alt="Phone." /></a>
+                    <a class="footer-contacts__contact footer-contacts__contacts--phone" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', $phone); ?>"><img class="footer-contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/phone.svg'; ?>" alt="Phone." /></a>
                 <?php endif; ?>
                 <?php if ($email <> '') : ?>
-                    <a class="footer-contacts__contact" href="mail:<?php echo $email; ?>"><img class="footer-contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/email.svg'; ?>" alt="Email." /></a>
+                    <a class="footer-contacts__contact footer-contacts__contacts--email" href="mail:<?php echo $email; ?>"><img class="footer-contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/email.svg'; ?>" alt="Email." /></a>
                 <?php endif; ?>
                 <?php if ($skype <> '') : ?>
-                    <a class="footer-contacts__contact" href="<?php echo $skype; ?>" target="_blank" rel="noopener noreferrer"><img class="footer-contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/skype.svg'; ?>" alt="Skype." /></a>
+                    <a class="footer-contacts__contact footer-contacts__contacts--skype" href="<?php echo $skype; ?>" target="_blank" rel="noopener noreferrer"><img class="footer-contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/skype.svg'; ?>" alt="Skype." /></a>
                 <?php endif; ?>
-                <?php if ($whatsup <> '') : ?>
-                    <a class="footer-contacts__contact" href="<?php echo $whatsup; ?>" target="_blank" rel="noopener noreferrer"><img class="footer-contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/whatsup.svg'; ?>" alt="WhatsUp." /></a>
+                <?php if ($whatsapp <> '') : ?>
+                    <a class="footer-contacts__contact footer-contacts__contacts--whatsapp" href="<?php echo $whatsapp; ?>" target="_blank" rel="noopener noreferrer"><img class="footer-contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/whatsapp.svg'; ?>" alt="WhatsApp." /></a>
                 <?php endif; ?>
                 <?php if ($telegram <> '') : ?>
-                    <a class="footer-contacts__contact" href="<?php echo $telegram; ?>" target="_blank" rel="noopener noreferrer"><img class="footer-contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/telegram.svg'; ?>" alt="Telegram." /></a>
+                    <a class="footer-contacts__contact footer-contacts__contacts--telegram" href="<?php echo $telegram; ?>" target="_blank" rel="noopener noreferrer"><img class="footer-contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/telegram.svg'; ?>" alt="Telegram." /></a>
                 <?php endif; ?>
                 <?php if ($viber <> '') : ?>
-                    <a class="footer-contacts__contact" href="<?php echo $viber; ?>" target="_blank" rel="noopener noreferrer"><img class="footer-contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/viber.svg'; ?>" alt="Viber." /></a>
+                    <a class="footer-contacts__contact footer-contacts__contacts--viber" href="<?php echo $viber; ?>" target="_blank" rel="noopener noreferrer"><img class="footer-contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/viber.svg'; ?>" alt="Viber." /></a>
                 <?php endif; ?>
                 <?php if ($linkedin <> '') : ?>
-                    <a class="footer-contacts__contact" href="<?php echo $linkedin; ?>" target="_blank" rel="noopener noreferrer"><img class="footer-contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/linkedin.svg'; ?>" alt="LinkedIn." /></a>
+                    <a class="footer-contacts__contact footer-contacts__contacts--linkedin" href="<?php echo $linkedin; ?>" target="_blank" rel="noopener noreferrer"><img class="footer-contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/linkedin.svg'; ?>" alt="LinkedIn." /></a>
                 <?php endif; ?>
                 <?php if ($github <> '') : ?>
-                    <a class="footer-contacts__contact" href="<?php echo $github; ?>" target="_blank" rel="noopener noreferrer"><img class="footer-contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/github.svg'; ?>" alt="GitHub." /></a>
+                    <a class="footer-contacts__contact footer-contacts__contacts--github" href="<?php echo $github; ?>" target="_blank" rel="noopener noreferrer"><img class="footer-contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/github.svg'; ?>" alt="GitHub." /></a>
                 <?php endif; ?>
                 <?php if ($facebook <> '') : ?>
-                    <a class="footer-contacts__contact" href="<?php echo $facebook; ?>" target="_blank" rel="noopener noreferrer"><img class="footer-contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/facebook.svg'; ?>" alt="Facebook." /></a>
+                    <a class="footer-contacts__contact footer-contacts__contacts--facebook" href="<?php echo $facebook; ?>" target="_blank" rel="noopener noreferrer"><img class="footer-contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/facebook.svg'; ?>" alt="Facebook." /></a>
                 <?php endif; ?>
                 <?php if ($instagram <> '') : ?>
-                    <a class="footer-contacts__contact" href="<?php echo $instagram; ?>" target="_blank" rel="noopener noreferrer"><img class="footer-contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/instagram.svg'; ?>" alt="Instagram." /></a>
+                    <a class="footer-contacts__contact footer-contacts__contacts--instagram" href="<?php echo $instagram; ?>" target="_blank" rel="noopener noreferrer"><img class="footer-contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/instagram.svg'; ?>" alt="Instagram." /></a>
                 <?php endif; ?>
 
             <?php endwhile; ?>

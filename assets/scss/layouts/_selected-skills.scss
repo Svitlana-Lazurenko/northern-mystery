@@ -1,6 +1,6 @@
 .selected-skills {
   padding: rem(100) 0 rem(120);
-  background-color: rgba(0, 0, 0, 0.266);
+  background-color: $color-black-transparent-1;
 
   &__title {
     color: $color-light;
@@ -34,7 +34,7 @@
 
 .selected-skill {
   flex-basis: calc((100% - rem(20)) / 2);
-  background-color: rgba(0, 0, 0, 0.202);
+  background-color: $color-black-transparent-2;
   padding: rem(20) 0 rem(30);
   border-radius: 5px;
   border: 2px solid $color-primary;

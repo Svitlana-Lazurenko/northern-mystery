@@ -31,4 +31,11 @@
   .header > & {
     justify-content: space-between;
   }
+
+  .hero > & {
+    flex-direction: column;
+    @include media(md) {
+      flex-direction: row;
+    }
+  }
 }

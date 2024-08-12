@@ -24,7 +24,7 @@ get_header(); ?>
                             <?php $facebook = get_sub_field('facebook'); ?>
                             <?php $instagram = get_sub_field('instagram'); ?>
                             <?php $skype = get_sub_field('skype'); ?>
-                            <?php $whatsup = get_sub_field('whatsup'); ?>
+                            <?php $whatsapp = get_sub_field('whatsapp'); ?>
                             <?php $telegram = get_sub_field('telegram'); ?>
                             <?php $viber = get_sub_field('viber'); ?>
 
@@ -37,8 +37,8 @@ get_header(); ?>
                             <?php if ($skype <> '') : ?>
                                 <a class="contacts__contact" href="<?php echo $skype; ?>" target="_blank" rel="noopener noreferrer"><img class="contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/skype.svg'; ?>" alt="Skype." />Skype</a>
                             <?php endif; ?>
-                            <?php if ($whatsup <> '') : ?>
-                                <a class="contacts__contact" href="<?php echo $whatsup; ?>" target="_blank" rel="noopener noreferrer"><img class="contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/whatsup.svg'; ?>" alt="WhatsUp." />WhatsUp</a>
+                            <?php if ($whatsapp <> '') : ?>
+                                <a class="contacts__contact" href="<?php echo $whatsapp; ?>" target="_blank" rel="noopener noreferrer"><img class="contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/whatsapp.svg'; ?>" alt="WhatsUp." />WhatsApp</a>
                             <?php endif; ?>
                             <?php if ($telegram <> '') : ?>
                                 <a class="contacts__contact" href="<?php echo $telegram; ?>" target="_blank" rel="noopener noreferrer"><img class="contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/telegram.svg'; ?>" alt="Telegram." />Telegram</a>
