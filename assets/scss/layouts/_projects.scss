@@ -1,0 +1,81 @@
+.projects {
+  background-color: $color-secondary;
+  padding: rem(100) 0;
+  &__title {
+    margin-bottom: rem(80);
+    font-size: rem(60);
+    color: $color-primary-light;
+    text-align: center;
+  }
+  &__list {
+    padding: 0 rem(35);
+    @include media(md) {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: rem(50);
+    }
+  }
+}
+
+.project-card {
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: $color-accent;
+  &:not(:last-child) {
+    margin-bottom: rem(35);
+  }
+
+  @include media(md) {
+    flex-basis: calc((100% - rem(50)) / 2);
+    margin-bottom: 0;
+  }
+
+  &__link {
+    overflow: hidden;
+    width: 100%;
+    height: 80%;
+    display: block;
+    position: relative;
+    &:hover .project-card__overlay {
+      transform: translateY(0);
+    }
+  }
+  &__background {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $color-black-transparent-3;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s linear;
+    transform: translateY(100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 rem(50);
+  }
+  &__description {
+    color: $color-secondary;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  &__title {
+    text-align: center;
+    margin: rem(10) 0;
+  }
+  &__title-link {
+    color: $color-light;
+    transition: color 0.4s linear;
+    &:hover {
+      color: $color-primary-light;
+    }
+  }
+}
