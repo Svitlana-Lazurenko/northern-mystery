@@ -26,10 +26,10 @@
                         </div>
                         <a class="recent-project__img-link" href="<?php the_permalink(); ?>">
                             <?php
-                            $imgSrc = get_the_post_thumbnail_url(get_the_ID(), 'full');
+                            $imgUrl = get_the_post_thumbnail_url(get_the_ID(), 'full');
                             $imgAlt = get_post_meta(get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true);
                             ?>
-                            <img class="recent-project__img" src="<?php echo $imgSrc ?>" alt="<?php echo $imgAlt; ?>" />
+                            <img class="recent-project__img" src="<?php echo $imgUrl ?>" alt="<?php echo $imgAlt; ?>" />
                         </a>
                     </div>
 

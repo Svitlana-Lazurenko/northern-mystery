@@ -1,11 +1,18 @@
 .projects {
-  background-color: $color-secondary;
+  background-color: $color-secondary-light;
   padding: rem(100) 0;
   &__title {
-    margin-bottom: rem(80);
-    font-size: rem(60);
+    font-size: rem(50);
+    margin-bottom: rem(70);
     color: $color-primary-light;
     text-align: center;
+    @include media(psw) {
+      font-size: rem(60);
+      margin-bottom: rem(100);
+    }
+    @include media(def) {
+      font-size: rem(85);
+    }
   }
   &__list {
     padding: 0 rem(35);
@@ -13,7 +20,9 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: rem(50);
+      column-gap: rem(60);
+      row-gap: rem(90);
+      padding: 0 rem(65);
     }
   }
 }
@@ -23,29 +32,29 @@
   overflow: hidden;
   background-color: $color-accent;
   &:not(:last-child) {
-    margin-bottom: rem(35);
+    @media (max-width: 767px) {
+      margin-bottom: rem(75);
+    }
   }
-
   @include media(md) {
-    flex-basis: calc((100% - rem(50)) / 2);
-    margin-bottom: 0;
+    flex-basis: calc((100% - rem(60)) / 2);
   }
 
   &__link {
-    overflow: hidden;
     width: 100%;
-    height: 80%;
+    height: 100%;
     display: block;
-    position: relative;
     &:hover .project-card__overlay {
       transform: translateY(0);
     }
   }
-  &__background {
+  &__img-wrapper {
+    overflow: hidden;
+    position: relative;
+  }
+  &__img {
     aspect-ratio: 16 / 9;
     width: 100%;
-    height: 100%;
-    background-size: cover;
   }
   &__overlay {
     position: absolute;
@@ -59,23 +68,44 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 rem(50);
+    padding: 0 rem(10);
+    @include media(psw) {
+      padding: 0 rem(50);
+    }
   }
   &__description {
-    color: $color-secondary;
+    color: $color-secondary-light;
     text-align: center;
     font-weight: 300;
+    font-size: rem(20);
+    @include media(psw) {
+      font-size: rem(25);
+    }
+    @include media(md) {
+      font-size: rem(20);
+    }
+    @include media(def) {
+      font-size: rem(30);
+    }
   }
-
   &__title {
     text-align: center;
-    margin: rem(10) 0;
-  }
-  &__title-link {
+    margin: rem(15) 0;
     color: $color-light;
     transition: color 0.4s linear;
-    &:hover {
-      color: $color-primary-light;
+    font-size: rem(20);
+    @include media(sm) {
+      font-size: rem(30);
+      margin: rem(20) 0;
+    }
+    @include media(md) {
+      font-size: rem(25);
+    }
+    @include media(def) {
+      font-size: rem(30);
+    }
+    @include media(hg) {
+      font-size: rem(40);
     }
   }
 }

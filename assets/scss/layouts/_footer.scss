@@ -83,7 +83,7 @@
   color: inherit;
   text-decoration: underline;
   text-underline-offset: rem(4);
-  transition: color linear 0.5s;
+  transition: color linear 0.3s;
   &:hover {
     color: $color-accent-extralight;
   }
