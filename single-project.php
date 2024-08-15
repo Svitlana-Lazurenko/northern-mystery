@@ -34,16 +34,19 @@ $link = get_field('link_to_project');
 
                 <div class="project__text">
                     <?php if ($description <> '') : ?>
-                        <p class="project__description"><?php echo $description; ?></p>
+                        <div class="project__description"><?php echo $description; ?></div>
                     <?php endif; ?>
 
                     <?php if ($completed_works <> '') : ?>
-                        <p class="project__works"><?php echo $completed_works; ?></p>
+                        <div class="project__works">
+                            <b class="project__works-title">Responsibilities:</b>
+                            <div class="project__works-text"><?php echo $completed_works; ?></div>
+                        </div>
                     <?php endif; ?>
 
                     <?php if (have_rows('technologies')) : ?>
                         <div class="project__technologies">
-                            <span class="project__technologies-title">Technologies:</span>
+                            <b class="project__technologies-title">Technologies:</b>
                             <ul class="project__technologies-wrapper">
                                 <?php while (have_rows('technologies')) : the_row(); ?>
                                     <?php $technology = get_sub_field('technology'); ?>
@@ -56,15 +59,14 @@ $link = get_field('link_to_project');
                     <?php endif; ?>
 
                     <?php if ($company <> '') : ?>
-                        <p class="project__company">Studio/Company: <?php echo $company; ?></p>
-                    <?php endif; ?>
-
-                    <?php if ($link <> '') : ?>
-                        <a class="project__link" href="<?php echo $link['url']; ?>" target="_blank" rel="noopener noreferrer">Open the project</a>
+                        <p class="project__company"><b>Studio/Company:</b> <?php echo $company; ?></p>
                     <?php endif; ?>
                 </div>
             </div>
 
+            <?php if ($link <> '') : ?>
+                <a class="btn btn--primary" href="<?php echo $link['url']; ?>" target="_blank" rel="noopener noreferrer">Open the project</a>
+            <?php endif; ?>
         </div>
     </section>
 </main>
