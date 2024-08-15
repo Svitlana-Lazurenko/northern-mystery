@@ -1,0 +1,84 @@
+.experience {
+  color: $color-primary;
+  padding: rem(40) 0;
+}
+.work-experience {
+  @include media(md) {
+    width: 70%;
+    padding-left: rem(50);
+  }
+  &__title {
+    margin-bottom: rem(50);
+  }
+  &__list {
+  }
+  &-card {
+    &:not(:last-child) {
+      margin-bottom: rem(40);
+    }
+    &__title {
+      margin-bottom: rem(15);
+    }
+    &__place {
+      display: inline-block;
+      background-color: $color-primary-light;
+      color: $color-light;
+      padding: rem(3) rem(15);
+      border-radius: 3px;
+      margin-right: rem(15);
+    }
+    &__time {
+    }
+    &-ach {
+      margin-top: rem(15);
+    }
+    &-ach__title {
+      margin-bottom: rem(5);
+    }
+    &-ach__list {
+      list-style: disc;
+      padding-left: rem(20);
+    }
+    &-ach__item {
+    }
+  }
+}
+
+.education {
+  margin-top: rem(80);
+  @include media(md) {
+    width: 70%;
+    padding-left: rem(50);
+  }
+  &__title {
+    margin-bottom: rem(50);
+  }
+  &__list {
+  }
+  &-card {
+    &:not(:last-child) {
+      margin-bottom: rem(40);
+    }
+    &__title {
+      margin-bottom: rem(15);
+    }
+    &__institution {
+      display: inline-block;
+      background-color: $color-primary-light;
+      color: $color-light;
+      padding: rem(3) rem(15);
+      border-radius: 3px;
+      margin-right: rem(15);
+    }
+    &__time {
+    }
+    &-ach {
+      margin-top: rem(15);
+    }
+    &-ach__title {
+      margin-bottom: rem(5);
+    }
+    &-ach__text {
+    }
+  }
+}
