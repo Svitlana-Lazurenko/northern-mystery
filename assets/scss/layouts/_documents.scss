@@ -1,0 +1,42 @@
+.documents {
+  color: $color-primary;
+  padding: rem(40) 0 rem(80);
+}
+.diplomas {
+  // margin-bottom: rem(40);
+}
+.certificates {
+  // margin-top: rem(40);
+}
+.documents__title {
+  text-align: center;
+  margin-bottom: rem(40);
+}
+.documents__list {
+  @include media(md) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: rem(60);
+    row-gap: rem(90);
+  }
+}
+.document {
+  @include media(md) {
+    flex-basis: calc((100% - rem(120)) / 3);
+  }
+  &__img {
+    margin: 0 auto;
+    margin-bottom: rem(10);
+  }
+  &__name {
+    display: block;
+    text-align: center;
+    margin-bottom: rem(5);
+  }
+  &__institution {
+    display: block;
+    text-align: center;
+    margin-bottom: rem(10);
+  }
+}

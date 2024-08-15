@@ -11,7 +11,7 @@
 
             if (have_rows('diplomas')) : ?>
                 <div class="diplomas">
-                    <h2>Diplomas</h2>
+                    <h2 class="documents__title">Diplomas</h2>
                     <ul class="documents__list">
                         <?php while (have_rows('diplomas')) : the_row();
                             $diploma = get_sub_field('file_of_diploma');
@@ -54,7 +54,7 @@
 
             if (have_rows('certificates')) : ?>
                 <div class="certificates">
-                    <h2>Certificates</h2>
+                    <h2 class="documents__title">Certificates</h2>
                     <ul class="documents__list">
                         <?php while (have_rows('certificates')) : the_row();
                             $certificate = get_sub_field('file_of_certificate');
@@ -76,7 +76,7 @@
                                 <?php endif; ?>
 
                                 <?php if ($certificate <> '') : ?>
-                                    <a class="btn-secondary" download href="<?php echo $certificate['url']; ?>">Download</a>
+                                    <a class="btn btn--secondary" download href="<?php echo $certificate['url']; ?>">Download</a>
                                 <?php endif; ?>
                             </li>
                         <?php endwhile; ?>
