@@ -1,0 +1,59 @@
+.contacts-img-link {
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: $color-secondary;
+  &:hover > img {
+    transform: scale(1.1);
+  }
+  & > img {
+    transition: 0.4s linear;
+    background-color: $color-secondary;
+    width: 100%;
+    height: 100%;
+  }
+
+  &--phone {
+    &:hover > img {
+      transform: scale(0.9);
+    }
+    & > img {
+      transform: scale(0.8);
+    }
+  }
+  &--email {
+    &:hover > img {
+      transform: scale(0.9);
+    }
+    & > img {
+      transform: scale(0.8);
+    }
+  }
+  &--linkedin {
+    &:hover > img {
+      transform: scale(1.25);
+    }
+    & > img {
+      transform: scale(1.15);
+    }
+  }
+  &--github {
+    &:hover > img {
+      transform: scale(1.32);
+    }
+    & > img {
+      transform: scale(1.22);
+    }
+  }
+}
+
+.footer .contacts-img-link {
+  flex-basis: calc((100% - rem(40)) / 5);
+  @include media(sm) {
+    flex-basis: calc((100% - rem(80)) / 5);
+  }
+}
+
+.contacts .contacts-img-link {
+  display: block;
+  width: rem(50);
+}

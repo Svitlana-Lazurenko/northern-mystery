@@ -29,34 +29,104 @@ get_header(); ?>
                             <?php $viber = get_sub_field('viber'); ?>
 
                             <?php if ($phone <> '') : ?>
-                                <a class="contacts__contact" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', $phone); ?>"><img class="contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/phone.svg'; ?>" alt="Phone." /><?php echo $phone ?></a>
+                                <div class="contacts__contact-wrapper">
+                                    <a class="contacts-img-link contacts-img-link--phone" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', $phone); ?>">
+                                        <img class="contacts-img" src="<?php echo get_template_directory_uri() . '/assets/svg/phone.svg'; ?>" alt="Phone." />
+                                    </a>
+                                    <a class="contacts__name-link" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', $phone); ?>">
+                                        <span class="contacts__name"><?php echo $phone ?></span>
+                                    </a>
+                                </div>
                             <?php endif; ?>
                             <?php if ($email <> '') : ?>
-                                <a class="contacts__contact" href="mail:<?php echo $email; ?>"><img class="contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/email.svg'; ?>" alt="Email." /><?php echo $email; ?></a>
+                                <div class="contacts__contact-wrapper">
+                                    <a class="contacts-img-link  contacts-img-link--email" href="mail:<?php echo $email; ?>">
+                                        <img class="contacts-img" src="<?php echo get_template_directory_uri() . '/assets/svg/email.svg'; ?>" alt="Email." />
+                                    </a>
+                                    <a class="contacts__name-link" href="mail:<?php echo $email; ?>">
+                                        <span class="contacts__name"><?php echo $email; ?></span>
+                                    </a>
+                                </div>
                             <?php endif; ?>
                             <?php if ($skype <> '') : ?>
-                                <a class="contacts__contact" href="<?php echo $skype; ?>" target="_blank" rel="noopener noreferrer"><img class="contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/skype.svg'; ?>" alt="Skype." />Skype</a>
+                                <div class="contacts__contact-wrapper">
+                                    <a class="contacts-img-link contacts-img-link--skype" href="<?php echo $skype; ?>" target="_blank" rel="noopener noreferrer">
+                                        <img class="contacts-img" src="<?php echo get_template_directory_uri() . '/assets/svg/skype.svg'; ?>" alt="Skype." />
+                                    </a>
+                                    <a class="contacts__name-link" href="<?php echo $skype; ?>" target="_blank" rel="noopener noreferrer">
+                                        <span class="contacts__name">Skype</span>
+                                    </a>
+                                </div>
                             <?php endif; ?>
                             <?php if ($whatsapp <> '') : ?>
-                                <a class="contacts__contact" href="<?php echo $whatsapp; ?>" target="_blank" rel="noopener noreferrer"><img class="contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/whatsapp.svg'; ?>" alt="WhatsUp." />WhatsApp</a>
+                                <div class="contacts__contact-wrapper">
+                                    <a class="contacts-img-link  contacts-img-link--whatsapp" href="<?php echo $whatsapp; ?>" target="_blank" rel="noopener noreferrer">
+                                        <img class="contacts-img" src="<?php echo get_template_directory_uri() . '/assets/svg/whatsapp.svg'; ?>" alt="WhatsUp." />
+                                    </a>
+                                    <a class="contacts__name-link" href="<?php echo $whatsapp; ?>" target="_blank" rel="noopener noreferrer">
+                                        <span class="contacts__name">WhatsApp</span>
+                                    </a>
+                                </div>
                             <?php endif; ?>
                             <?php if ($telegram <> '') : ?>
-                                <a class="contacts__contact" href="<?php echo $telegram; ?>" target="_blank" rel="noopener noreferrer"><img class="contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/telegram.svg'; ?>" alt="Telegram." />Telegram</a>
+                                <div class="contacts__contact-wrapper">
+                                    <a class="contacts-img-link contacts-img-link--telegram" href="<?php echo $telegram; ?>" target="_blank" rel="noopener noreferrer">
+                                        <img class="contacts-img" src="<?php echo get_template_directory_uri() . '/assets/svg/telegram.svg'; ?>" alt="Telegram." />
+                                    </a>
+                                    <a class="contacts__name-link" href="<?php echo $telegram; ?>" target="_blank" rel="noopener noreferrer">
+                                        <span class="contacts__name">Telegram</span>
+                                    </a>
+                                </div>
                             <?php endif; ?>
                             <?php if ($viber <> '') : ?>
-                                <a class="contacts__contact" href="<?php echo $viber; ?>" target="_blank" rel="noopener noreferrer"><img class="contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/viber.svg'; ?>" alt="Viber." />Viber</a>
+                                <div class="contacts__contact-wrapper">
+                                    <a class="contacts-img-link contacts-img-link--viber" href="<?php echo $viber; ?>" target="_blank" rel="noopener noreferrer">
+                                        <img class="contacts-img" src="<?php echo get_template_directory_uri() . '/assets/svg/viber.svg'; ?>" alt="Viber." />
+                                    </a>
+                                    <a class="contacts__cname-link href=" <?php echo $viber; ?>" target="_blank" rel="noopener noreferrer">
+                                        <span class="contacts__name">Viber</span>
+                                    </a>
+                                </div>
                             <?php endif; ?>
                             <?php if ($linkedin <> '') : ?>
-                                <a class="contacts__contact" href="<?php echo $linkedin; ?>" target="_blank" rel="noopener noreferrer"><img class="contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/linkedin.svg'; ?>" alt="LinkedIn." />LinkedIn</a>
+                                <div class="contacts__contact-wrapper">
+                                    <a class="contacts-img-link contacts-img-link--linkedin" href="<?php echo $linkedin; ?>" target="_blank" rel="noopener noreferrer">
+                                        <img class="contacts-img" src="<?php echo get_template_directory_uri() . '/assets/svg/linkedin.svg'; ?>" alt="LinkedIn." />
+                                    </a>
+                                    <a class="contacts__name-link" href="<?php echo $linkedin; ?>" target="_blank" rel="noopener noreferrer">
+                                        <span class="contacts__name">LinkedIn</span>
+                                    </a>
+                                </div>
                             <?php endif; ?>
                             <?php if ($github <> '') : ?>
-                                <a class="contacts__contact" href="<?php echo $github; ?>" target="_blank" rel="noopener noreferrer"><img class="contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/github.svg'; ?>" alt="GitHub." />GitHub</a>
+                                <div class="contacts__contact-wrapper">
+                                    <a class="contacts-img-link contacts-img-link--github" href="<?php echo $github; ?>" target="_blank" rel="noopener noreferrer">
+                                        <img class="contacts-img" src="<?php echo get_template_directory_uri() . '/assets/svg/github.svg'; ?>" alt="GitHub." />
+                                    </a>
+                                    <a class="contacts__name-link" href="<?php echo $github; ?>" target="_blank" rel="noopener noreferrer">
+                                        <span class="contacts__name">GitHub</span>
+                                    </a>
+                                </div>
                             <?php endif; ?>
                             <?php if ($facebook <> '') : ?>
-                                <a class="contacts__contact" href="<?php echo $facebook; ?>" target="_blank" rel="noopener noreferrer"><img class="contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/facebook.svg'; ?>" alt="Facebook." />Facebook</a>
+                                <div class="contacts__contact-wrapper">
+                                    <a class="contacts-img-link contacts-img-link--facebook" href="<?php echo $facebook; ?>" target="_blank" rel="noopener noreferrer">
+                                        <img class="contacts-img" src="<?php echo get_template_directory_uri() . '/assets/svg/facebook.svg'; ?>" alt="Facebook." />
+                                    </a>
+                                    <a class="contacts__name-link" href="<?php echo $facebook; ?>" target="_blank" rel="noopener noreferrer">
+                                        <span class="contacts__name">Facebook</span>
+                                    </a>
+                                </div>
                             <?php endif; ?>
                             <?php if ($instagram <> '') : ?>
-                                <a class="contacts__contact" href="<?php echo $instagram; ?>" target="_blank" rel="noopener noreferrer"><img class="contacts__img" src="<?php echo get_template_directory_uri() . '/assets/svg/instagram.svg'; ?>" alt="Instagram." />Instagram</a>
+                                <div class="contacts__contact-wrapper">
+                                    <a class="contacts-img-link contacts-img-link--instagram" href="<?php echo $instagram; ?>" target="_blank" rel="noopener noreferrer">
+                                        <img class="contacts-img" src="<?php echo get_template_directory_uri() . '/assets/svg/instagram.svg'; ?>" alt="Instagram." />
+                                    </a>
+                                    <a class="contacts__name-link" href="<?php echo $instagram; ?>" target="_blank" rel="noopener noreferrer">
+                                        <span class="contacts__name">Instagram</span>
+                                    </a>
+                                </div>
                             <?php endif; ?>
 
                         <?php endwhile; ?>
