@@ -1,5 +1,5 @@
 <section class="main-info">
-    <div class="container">
+    <div class="container container--flex">
 
         <div class="brief-info">
             <?php
@@ -22,7 +22,7 @@
             <?php endif; ?>
 
             <?php if ($resume <> '') : ?>
-                <a class="btn-primary" download href="<?php echo $resume['url']; ?>">Download CV</a>
+                <a class="btn btn--primary" download href="<?php echo $resume['url']; ?>">Download CV</a>
             <?php endif; ?>
         </div>
 
@@ -30,12 +30,12 @@
 
             <?php if (have_rows('skills')) : ?>
                 <div class="mini-skills">
-                    <h2 class="mini-skills__title">My skills</h2>
-                    <ul class="mini-skills_list">
+                    <h2 class="mini-skills__title">My skills:</h2>
+                    <ul class="mini-skills__list">
                         <?php while (have_rows('skills')) : the_row(); ?>
                             <?php $skill = get_sub_field('skill'); ?>
                             <?php if ($skill <> '') : ?>
-                                <li class="mini-skills_skill"><?php echo $skill; ?></li>
+                                <li class="mini-skills__skill"><?php echo $skill; ?></li>
                             <?php endif; ?>
                         <?php endwhile; ?>
                     </ul>
@@ -44,7 +44,7 @@
 
             <?php if (have_rows('languages')) : ?>
                 <div class="languages">
-                    <h2 class="languages__title">Languages</h2>
+                    <h2 class="languages__title">Languages:</h2>
                     <ul class="languages__list">
                         <?php while (have_rows('languages')) : the_row();
                             $name = get_sub_field('name_of_language');

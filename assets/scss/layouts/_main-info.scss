@@ -1,0 +1,76 @@
+.main-info {
+  color: $color-primary;
+  padding: rem(80) 0;
+}
+
+.brief-info {
+  @media (max-width: 767px) {
+    margin-bottom: rem(55);
+  }
+  @include media(md) {
+    width: 50%;
+  }
+  &__img {
+    width: 70%;
+    max-width: 400px;
+    margin: 0 auto rem(20);
+    border-radius: 5px;
+  }
+  &__name {
+    @include media(md) {
+      padding: 0 rem(20);
+    }
+  }
+  &__description {
+    margin-bottom: rem(30);
+    @include media(md) {
+      padding: 0 rem(20);
+    }
+  }
+}
+
+.skills {
+  @include media(md) {
+    width: 50%;
+    padding: 0 rem(20);
+  }
+}
+.mini-skills {
+  margin-bottom: rem(20);
+  &__title {
+  }
+  &__list {
+  }
+  &__skill {
+    display: inline-block;
+    background-color: $color-secondary-light;
+    margin: rem(3);
+    padding: 0 rem(9);
+    border-radius: 3px;
+  }
+}
+
+.languages {
+  margin-bottom: rem(20);
+  &__title {
+  }
+  &__list {
+    list-style: disc;
+    padding-left: rem(20);
+  }
+  &__language {
+  }
+  &__name {
+  }
+  &__level {
+  }
+}
+
+.practice {
+  &__title {
+  }
+  &__list {
+    list-style: disc;
+    padding-left: rem(20);
+  }
+}
