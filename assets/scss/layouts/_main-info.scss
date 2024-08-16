@@ -17,12 +17,22 @@
     border-radius: 5px;
   }
   &__name {
+    font-size: rem(30);
+    margin-bottom: rem(10);
+    @include media(sm) {
+      font-size: rem(45);
+    }
     @include media(md) {
+      font-size: rem(30);
       padding: 0 rem(20);
+    }
+    @include media(hg) {
+      font-size: rem(40);
     }
   }
   &__description {
     margin-bottom: rem(30);
+    font-size: rem(20);
     @include media(md) {
       padding: 0 rem(20);
     }
@@ -38,6 +48,18 @@
 .mini-skills {
   margin-bottom: rem(20);
   &__title {
+    color: $color-primary-light;
+    margin-bottom: rem(10);
+    font-size: rem(30);
+    @include media(sm) {
+      font-size: rem(45);
+    }
+    @include media(md) {
+      font-size: rem(30);
+    }
+    @include media(hg) {
+      font-size: rem(40);
+    }
   }
   &__list {
   }
@@ -47,30 +69,66 @@
     margin: rem(3);
     padding: 0 rem(9);
     border-radius: 3px;
+    font-size: rem(20);
   }
 }
 
 .languages {
   margin-bottom: rem(20);
   &__title {
+    color: $color-primary-light;
+    margin-bottom: rem(10);
+    font-size: rem(30);
+    @include media(sm) {
+      font-size: rem(45);
+    }
+    @include media(md) {
+      font-size: rem(30);
+    }
+    @include media(hg) {
+      font-size: rem(40);
+    }
   }
   &__list {
-    list-style: disc;
+    list-style: "🌐";
     padding-left: rem(20);
   }
   &__language {
+    &:not(:last-child) {
+      margin-bottom: rem(5);
+    }
   }
   &__name {
+    font-size: rem(20);
   }
   &__level {
+    font-size: rem(20);
   }
 }
 
-.practice {
+.practices {
   &__title {
+    color: $color-primary-light;
+    margin-bottom: rem(10);
+    font-size: rem(30);
+    @include media(sm) {
+      font-size: rem(45);
+    }
+    @include media(md) {
+      font-size: rem(30);
+    }
+    @include media(hg) {
+      font-size: rem(40);
+    }
   }
   &__list {
-    list-style: disc;
+    list-style: "📍";
     padding-left: rem(20);
+  }
+  &__practice {
+    font-size: rem(20);
+    &:not(:last-child) {
+      margin-bottom: rem(5);
+    }
   }
 }

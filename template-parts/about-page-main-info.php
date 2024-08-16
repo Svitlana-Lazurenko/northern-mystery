@@ -63,13 +63,13 @@
             <?php endif; ?>
 
             <?php if (have_rows('i_have_practice_in')) : ?>
-                <div class="practice">
-                    <h2 class="practice__title">I have practice in:</h2>
-                    <ul class="practice__list">
+                <div class="practices">
+                    <h2 class="practices__title">I have practice in:</h2>
+                    <ul class="practices__list">
                         <?php while (have_rows('i_have_practice_in')) : the_row(); ?>
                             <?php $skill_description = get_sub_field('skill_description'); ?>
                             <?php if ($skill_description <> '') : ?>
-                                <li><?php echo $skill_description; ?></li>
+                                <li class="practices__practice"><?php echo $skill_description; ?></li>
                             <?php endif; ?>
                         <?php endwhile; ?>
                     </ul>

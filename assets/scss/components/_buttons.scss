@@ -44,7 +44,8 @@
   }
 }
 
-.document .btn {
+.document .btn,
+.contacts .btn {
   @include media(def) {
     padding: rem(12) 0;
     font-size: rem(20);
