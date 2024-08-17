@@ -9,6 +9,7 @@
   background-color: $color-primary;
   padding: rem(50) rem(40);
   transition: transform 400ms ease-in;
+  overflow-y: scroll;
 
   &.is-open {
     transform: translateX(0);
@@ -41,7 +42,8 @@
         @include media(ms) {
           font-size: rem(60);
         }
-        &:hover {
+        &:hover,
+        &:focus {
         }
       }
 

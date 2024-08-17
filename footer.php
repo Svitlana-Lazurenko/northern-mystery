@@ -2,7 +2,7 @@
 
     <?php $text = get_field('text', 'option'); ?>
     <?php if ($text <> '') : ?>
-        <div class="footer__text"><?php echo $text; ?></div>
+        <p class="footer__text"><?php echo $text; ?></p>
     <?php endif; ?>
 
     <?php if (have_rows('contacts', 'option')) : ?>

@@ -10,7 +10,7 @@ $name = get_field('name_of_project');
 $type = get_field('type_of_project');
 $image = get_field('image_of_project');
 $description = get_field('description_of_project');
-$completed_works = get_field('completed_works');
+$responsibilities = get_field('responsibilities');
 $company = get_field('studio_or_company');
 $link = get_field('link_to_project');
 ?>
@@ -37,10 +37,10 @@ $link = get_field('link_to_project');
                         <div class="project__description"><?php echo $description; ?></div>
                     <?php endif; ?>
 
-                    <?php if ($completed_works <> '') : ?>
-                        <div class="project__works">
-                            <b class="project__works-title">Responsibilities:</b>
-                            <div class="project__works-text"><?php echo $completed_works; ?></div>
+                    <?php if ($responsibilities <> '') : ?>
+                        <div class="project__responsibilities">
+                            <b class="project__responsibilities-title">Responsibilities:</b>
+                            <div class="project__responsibilities-text"><?php echo $responsibilities; ?></div>
                         </div>
                     <?php endif; ?>
 

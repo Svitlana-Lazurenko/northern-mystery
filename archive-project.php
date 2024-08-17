@@ -29,7 +29,7 @@
                     <?php endwhile; ?>
                 </ul>
             <?php else : ?>
-                <p>No works found</p>
+                <p class="not-found">No added works yet</p>
             <?php endif; ?>
 
         </div>

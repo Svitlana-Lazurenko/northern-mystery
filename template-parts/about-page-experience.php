@@ -82,7 +82,7 @@
                                 <?php if ($achievments <> '') : ?>
                                     <div class="education-card-ach">
                                         <h4 class="education-card-ach__title">Achievments:</h4>
-                                        <p class="education-card-ach__text"><?php echo $achievments; ?></p>
+                                        <div class="education-card-ach__text"><?php echo $achievments; ?></div>
                                     </div>
                                 <?php endif; ?>
                             </li>

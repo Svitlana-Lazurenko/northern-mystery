@@ -3,8 +3,8 @@
 
         <?php
         $name = get_field('name-welcome');
-        $specialty = get_field('specialty');
-        $greeting = get_field('greeting');
+        $specialty = get_field('specialty-welcome');
+        $info = get_field('info-welcome');
         $photo = get_field('photo-welcome');
         $resume = get_field('resume', 'option');
         ?>
@@ -18,8 +18,8 @@
                 <h2 class="hero-info__specialty"><?php echo $specialty; ?></h2>
             <?php endif; ?>
 
-            <?php if ($greeting <> '') : ?>
-                <p class="hero-info__text"><?php echo $greeting; ?></p>
+            <?php if ($info <> '') : ?>
+                <p class="hero-info__info"><?php echo $info; ?></p>
             <?php endif; ?>
 
             <?php if ($resume <> '') : ?>
@@ -28,8 +28,8 @@
         </div>
 
         <div class="hero-img">
-            <img class="hero-img__lettering" src="<?php echo get_template_directory_uri() . '/assets/svg/circle-text.svg'; ?>);" alt="" />
-            <img class="hero-img__tree" src="<?php echo get_template_directory_uri() . '/assets/svg/tree.svg'; ?>)" alt="" />
+            <img class="hero-img__lettering" src="<?php echo get_template_directory_uri() . '/assets/svg/circle-text.svg'; ?>);" alt="" aria-hidden="true" />
+            <img class="hero-img__tree" src="<?php echo get_template_directory_uri() . '/assets/svg/tree.svg'; ?>)" alt="" aria-hidden="true" />
             <?php if ($photo <> '') : ?>
                 <img class="hero-img__photo" src="<?php echo $photo['url']; ?>" alt="<?php echo $photo['alt']; ?>" />
             <?php endif; ?>

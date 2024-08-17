@@ -34,7 +34,7 @@ get_header(); ?>
                                         <img class="contacts-img" src="<?php echo get_template_directory_uri() . '/assets/svg/phone.svg'; ?>" alt="Phone." />
                                     </a>
                                     <a class="contacts__name-link" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', $phone); ?>">
-                                        <span class="contacts__name"><?php echo $phone ?></span>
+                                        <span class="contacts__name"><?php echo $phone; ?></span>
                                     </a>
                                 </div>
                             <?php endif; ?>

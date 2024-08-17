@@ -2,7 +2,8 @@
   border-radius: 50%;
   overflow: hidden;
   background-color: $color-secondary;
-  &:hover > img {
+  &:hover > img,
+  &:focus > img {
     transform: scale(1.1);
   }
   & > img {
@@ -13,7 +14,8 @@
   }
 
   &--phone {
-    &:hover > img {
+    &:hover > img,
+    &:focus > img {
       transform: scale(0.9);
     }
     & > img {
@@ -21,7 +23,8 @@
     }
   }
   &--email {
-    &:hover > img {
+    &:hover > img,
+    &:focus > img {
       transform: scale(0.9);
     }
     & > img {
@@ -29,7 +32,8 @@
     }
   }
   &--linkedin {
-    &:hover > img {
+    &:hover > img,
+    &:focus > img {
       transform: scale(1.25);
     }
     & > img {
@@ -37,7 +41,8 @@
     }
   }
   &--github {
-    &:hover > img {
+    &:hover > img,
+    &:focus > img {
       transform: scale(1.32);
     }
     & > img {
@@ -56,4 +61,5 @@
 .contacts .contacts-img-link {
   display: block;
   width: rem(50);
+  height: rem(50);
 }

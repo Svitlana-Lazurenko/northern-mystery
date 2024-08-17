@@ -1,18 +1,18 @@
 .footer {
   background-color: $color-primary;
-  padding: rem(80) 0 rem(100);
+  padding: rem(50) 0 rem(60);
 
   &__text {
     font-size: rem(20);
     font-family: $font-accent;
     text-align: center;
-    margin: 0 auto rem(40);
+    margin: 0 auto rem(30);
     max-width: 80%;
   }
 }
 
 .footer-contacts {
-  margin: 0 auto rem(60);
+  margin: 0 auto rem(40);
   width: rem(330);
   display: flex;
   justify-content: center;
@@ -33,7 +33,8 @@
   text-decoration: underline;
   text-underline-offset: rem(4);
   transition: color linear 0.3s;
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-accent-extralight;
   }
 }

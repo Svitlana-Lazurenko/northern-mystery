@@ -29,7 +29,8 @@
     background-color: $color-accent;
     color: $color-light;
     transition: background-color linear 0.4s;
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $color-accent-light;
     }
   }
@@ -38,7 +39,8 @@
     background-color: $color-primary;
     color: $color-light;
     transition: background-color linear 0.4s;
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $color-primary-light;
     }
   }

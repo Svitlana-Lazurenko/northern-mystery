@@ -21,7 +21,9 @@
                         ?>
                             <li class="document">
                                 <?php if ($diploma <> '' && $diploma_caption <> '') : ?>
-                                    <?php echo wp_get_attachment_image($diploma['id'], 'medium', 'false', array('class' => 'document__img', 'alt' => $diploma_caption)); ?>
+                                    <div class="document__img-wrapper">
+                                        <?php echo wp_get_attachment_image($diploma['id'], 'medium', false, array('class' => 'document__img', 'alt' => $diploma_caption)); ?>
+                                    </div>
                                 <?php endif; ?>
 
                                 <?php if ($diploma_specialty <> '') : ?>
@@ -33,7 +35,7 @@
                                 <?php endif; ?>
 
                                 <?php if ($diploma <> '') : ?>
-                                    <a class="btn-secondary" download href="<?php echo $diploma['url']; ?>">Download</a>
+                                    <a class="btn btn--secondary" download href="<?php echo $diploma['url']; ?>">Download</a>
                                 <?php endif; ?>
                             </li>
                         <?php endwhile; ?>
@@ -44,8 +46,23 @@
 
         show_diplomas_block(); ?>
 
+        <!------------------------------Separator------------------------------------>
+
+        <?php
+        function show_separator()
+        {
+            $show_diplomas = get_field('show_diplomas');
+            $show_certificates = get_field('show_certificates');
+
+            if ($show_diplomas && $show_certificates): ?>
+                <div class="documents__separator"></div>
+        <?php endif;
+        }
+
+        show_separator(); ?>
 
         <!--------------------------Certificates with switch------------------------------>
+
         <?php
         function show_certificates_block()
         {
@@ -64,7 +81,9 @@
                         ?>
                             <li class="document">
                                 <?php if ($certificate <> '' && $certificate_caption <> '') : ?>
-                                    <?php echo wp_get_attachment_image($certificate['id'], 'medium', 'false', array('class' => 'document__img', 'alt' => $certificate_caption)); ?>
+                                    <div class="document__img-wrapper">
+                                        <?php echo wp_get_attachment_image($certificate['id'], 'medium', false, array('class' => 'document__img', 'alt' => $certificate_caption)); ?>
+                                    </div>
                                 <?php endif; ?>
 
                                 <?php if ($certificate_specialty <> '') : ?>
@@ -86,7 +105,6 @@
         }
 
         show_certificates_block(); ?>
-
 
     </div>
 </section>

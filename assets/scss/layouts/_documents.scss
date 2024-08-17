@@ -1,55 +1,70 @@
 .documents {
   color: $color-primary;
   padding: rem(40) 0 rem(80);
-}
-.diplomas {
-  // margin-bottom: rem(40);
-}
-.certificates {
-  // margin-top: rem(40);
-}
-.documents__title {
-  text-align: center;
-  margin-bottom: rem(40);
-  font-size: rem(30);
-  color: $color-primary-light;
-  @include media(sm) {
-    font-size: rem(45);
-  }
   @include media(md) {
-    font-size: rem(30);
+    padding: rem(80) 0;
   }
-  @include media(hg) {
-    font-size: rem(40);
+
+  &__separator {
+    height: rem(80);
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: rem(40);
+    font-size: rem(35);
+    color: $color-primary-light;
+    @include media(sm) {
+      font-size: rem(45);
+    }
+  }
+  &__list {
+    @include media(md) {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      column-gap: rem(60);
+      row-gap: rem(90);
+    }
   }
 }
-.documents__list {
-  @include media(md) {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    column-gap: rem(60);
-    row-gap: rem(90);
-  }
-}
+
 .document {
+  background-color: $color-secondary-light;
+  border-radius: 5px;
+  padding: rem(20) rem(10);
+  &:not(:last-child) {
+    @media (max-width: 767px) {
+      margin-bottom: rem(40);
+    }
+  }
   @include media(md) {
     flex-basis: calc((100% - rem(120)) / 3);
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: rem(15);
+    @include media(md) {
+      flex-grow: 1;
+    }
   }
   &__img {
-    margin: 0 auto;
-    margin-bottom: rem(10);
   }
   &__name {
     display: block;
     text-align: center;
     margin-bottom: rem(5);
     font-size: rem(20);
+    font-weight: 500;
   }
   &__institution {
     display: block;
     text-align: center;
-    margin-bottom: rem(10);
-    font-size: rem(20);
+    margin-bottom: rem(15);
+    font-size: rem(18);
   }
 }

@@ -13,7 +13,7 @@
     </defs>
     <text font-size="20" fill="#8fbfba" font-family="Arkhip">
         <textPath href="#circlePath" textLength="942">
-        ?php if &#10088;$description &lt;&gt; ''&#10089; : ?&gt; &lt;div&gt;&lt;?php echo $description; ?&gt;&lt;/div&gt; &lt;?php endif; ?&gt;   &lt;
+        ?php if &#10088;$text &lt;&gt; ' '&#10089; : ?&gt; &lt;div&gt;Hello, world! &lt;?php echo $text; ?&gt;&lt;/div&gt; &lt;?php endif; ?&gt;   &lt;
         </textPath>
         <animateTransform attributeName="transform" type="rotate" from="0 200 200" to="360 200 200" dur="25s" repeatCount="indefinite" />
     </text>

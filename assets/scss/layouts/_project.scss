@@ -48,6 +48,7 @@
     aspect-ratio: 16 / 9;
     border-radius: 5px;
     border: 2px solid $color-primary-light;
+    background-color: $color-primary-light;
     @media (max-width: 767px) {
       margin-bottom: rem(45);
     }
@@ -66,14 +67,14 @@
   &__description {
     margin-bottom: rem(15);
   }
-  &__works {
+  &__responsibilities {
     margin-bottom: rem(15);
   }
-  &__works-title {
+  &__responsibilities-title {
     display: block;
     margin-bottom: rem(5);
   }
-  &__works-text {
+  &__responsibilities-text {
   }
   &__technologies {
     margin-bottom: rem(15);

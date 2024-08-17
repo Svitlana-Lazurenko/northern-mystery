@@ -41,7 +41,7 @@
             <a class="btn btn--secondary" href="<?php echo home_url() . '/works'; ?>">More works</a>
 
         <?php } else { ?>
-            <p class="recent-projects__no-found">No works found</p>'
+            <p class="not-found">No added works yet</p>
         <?php } ?>
 
     </div>

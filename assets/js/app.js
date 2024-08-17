@@ -22,10 +22,12 @@
   const toggleMenu = () => {
     const isMenuOpen =
       openMenuBtn.getAttribute("aria-expanded") === "true" || false;
+
     openMenuBtn.setAttribute("aria-expanded", !isMenuOpen);
     closeMenuBtn.setAttribute("aria-expanded", !isMenuOpen);
     mobileMenu.setAttribute("aria-hidden", isMenuOpen);
     mobileMenu.classList.toggle("is-open");
+    document.body.classList.toggle("menu-open");
   };
 
   openMenuBtn.addEventListener("click", toggleMenu);

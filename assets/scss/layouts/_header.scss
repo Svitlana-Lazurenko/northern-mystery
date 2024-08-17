@@ -22,9 +22,10 @@ header {
           height: 1px;
           background-color: $color-light;
           margin-top: rem(3.5);
-          transition: width 1s linear;
+          transition: width 0.5s linear;
         }
-        &:hover {
+        &:hover,
+        &:focus {
           &::after {
             width: 100%;
           }

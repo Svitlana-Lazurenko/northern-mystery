@@ -1,11 +1,14 @@
 .main-info {
   color: $color-primary;
   padding: rem(80) 0 rem(40);
+  @include media(md) {
+    padding: rem(80) 0;
+  }
 }
 
 .brief-info {
   @media (max-width: 767px) {
-    margin-bottom: rem(55);
+    margin-bottom: rem(40);
   }
   @include media(md) {
     width: 50%;
@@ -15,6 +18,8 @@
     max-width: 400px;
     margin: 0 auto rem(20);
     border-radius: 5px;
+    background-color: $color-primary-light;
+    aspect-ratio: 0.8 / 1;
   }
   &__name {
     font-size: rem(30);

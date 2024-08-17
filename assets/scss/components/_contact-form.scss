@@ -4,6 +4,7 @@
   background-color: $color-secondary-light;
   border-radius: 5px;
   padding: rem(20) rem(20);
+  color: $color-primary;
   @include media(md) {
     max-width: 360px;
     padding: rem(20) rem(45);
@@ -14,11 +15,13 @@
     border-radius: 5px;
     height: rem(35);
     width: 100%;
+    border: none;
   }
   &__input--textarea {
     margin: rem(5) 0 rem(35);
     border-radius: 5px;
     resize: vertical;
     width: 100%;
+    border: none;
   }
 }

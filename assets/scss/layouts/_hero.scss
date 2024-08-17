@@ -95,7 +95,7 @@
         margin-top: rem(20);
       }
     }
-    &__text {
+    &__info {
       letter-spacing: rem(2);
       font-weight: 300;
       margin-bottom: rem(40);
@@ -131,11 +131,13 @@
     &__lettering {
       position: absolute;
       width: 100%;
+      aspect-ratio: 1 / 1;
       bottom: 0.8%;
       border-radius: 50%;
     }
     &__tree {
       width: 85%;
+      aspect-ratio: 1 / 1;
       position: absolute;
       bottom: 8%;
       left: 50%;
@@ -144,6 +146,7 @@
 
     &__photo {
       width: 76%;
+      aspect-ratio: 1 / 1.06;
       position: absolute;
       bottom: 0;
       left: 12%;
