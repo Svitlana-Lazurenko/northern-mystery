@@ -18,40 +18,68 @@
 
 .mobile-menu {
   margin-top: rem(40);
+
   & > .menu {
     padding-left: rem(10);
     @include media(psw) {
       padding-left: rem(15);
     }
+
     @include media(ms) {
       padding-left: rem(20);
     }
+
     // Menu-items
     & > li {
       &:not(:last-child) {
         margin-bottom: rem(20);
       }
+
       // Links
       & > a {
+        display: inline-block;
         color: $color-light;
         font-size: rem(50);
         font-weight: 300;
+
         @include media(psw) {
           font-size: rem(55);
         }
+
         @include media(ms) {
           font-size: rem(60);
         }
+
+        &::after {
+          content: "";
+          display: block;
+          width: 0;
+          height: 1px;
+          background-color: $color-light;
+          margin-top: rem(3.5);
+          transition: width 0.5s linear;
+        }
+
         &:hover,
         &:focus {
+          &::after {
+            width: 100%;
+          }
         }
       }
 
       // Current menu-item
       &.current-menu-item {
-        text-decoration: underline;
-        text-underline-offset: rem(17);
-        text-decoration-thickness: 1px;
+        // Link of current menu-item
+        & > a::after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 1px;
+          background-color: $color-light;
+          margin-top: rem(3.5);
+          transition: width 1s linear;
+        }
       }
     }
   }

@@ -6,6 +6,7 @@
     color: $color-light;
     font-size: rem(58);
     margin-bottom: rem(100);
+
     @include media(psw) {
       font-size: rem(80);
     }
@@ -19,11 +20,13 @@
       font-size: rem(95);
     }
   }
+
   &__list {
     display: flex;
     flex-wrap: wrap;
     gap: rem(20);
     margin-bottom: rem(80);
+
     @include media(md) {
       display: flex;
       flex-wrap: wrap;
@@ -39,15 +42,18 @@
   padding: rem(20) 0 rem(30);
   border-radius: 5px;
   border: 2px solid $color-primary;
+
   @include media(md) {
     flex-basis: calc((100% - rem(150)) / 4);
   }
+
   &__img {
     width: 70%;
     aspect-ratio: 1 / 1;
     margin: 0 auto;
     margin-bottom: rem(20);
   }
+
   &__title {
     font-size: rem(25);
     text-align: center;

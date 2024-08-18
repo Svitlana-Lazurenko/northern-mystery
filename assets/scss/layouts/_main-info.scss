@@ -1,18 +1,17 @@
 .main-info {
   color: $color-primary;
   padding: rem(80) 0 rem(40);
-  @include media(md) {
-    padding: rem(80) 0;
-  }
 }
 
 .brief-info {
   @media (max-width: 767px) {
     margin-bottom: rem(40);
   }
+
   @include media(md) {
     width: 50%;
   }
+
   &__img {
     width: 70%;
     max-width: 400px;
@@ -21,9 +20,11 @@
     background-color: $color-primary-light;
     aspect-ratio: 0.8 / 1;
   }
+
   &__name {
     font-size: rem(30);
     margin-bottom: rem(10);
+
     @include media(sm) {
       font-size: rem(45);
     }
@@ -35,9 +36,11 @@
       font-size: rem(40);
     }
   }
+
   &__description {
     margin-bottom: rem(30);
     font-size: rem(20);
+
     @include media(md) {
       padding: 0 rem(20);
     }
@@ -50,12 +53,15 @@
     padding: 0 rem(20);
   }
 }
+
 .mini-skills {
   margin-bottom: rem(20);
+
   &__title {
     color: $color-primary-light;
     margin-bottom: rem(10);
     font-size: rem(30);
+
     @include media(sm) {
       font-size: rem(45);
     }
@@ -66,8 +72,7 @@
       font-size: rem(40);
     }
   }
-  &__list {
-  }
+
   &__skill {
     display: inline-block;
     background-color: $color-secondary-light;
@@ -80,10 +85,12 @@
 
 .languages {
   margin-bottom: rem(20);
+
   &__title {
     color: $color-primary-light;
     margin-bottom: rem(10);
     font-size: rem(30);
+
     @include media(sm) {
       font-size: rem(45);
     }
@@ -94,18 +101,22 @@
       font-size: rem(40);
     }
   }
+
   &__list {
     list-style: "🌐";
     padding-left: rem(20);
   }
+
   &__language {
     &:not(:last-child) {
       margin-bottom: rem(5);
     }
   }
+
   &__name {
     font-size: rem(20);
   }
+
   &__level {
     font-size: rem(20);
   }
@@ -116,6 +127,7 @@
     color: $color-primary-light;
     margin-bottom: rem(10);
     font-size: rem(30);
+
     @include media(sm) {
       font-size: rem(45);
     }
@@ -126,12 +138,15 @@
       font-size: rem(40);
     }
   }
+
   &__list {
     list-style: "📍";
     padding-left: rem(20);
   }
+
   &__practice {
     font-size: rem(20);
+
     &:not(:last-child) {
       margin-bottom: rem(5);
     }

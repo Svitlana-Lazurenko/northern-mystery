@@ -11,6 +11,9 @@
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
 
+    <div id="cursor"></div>
+    <div id="stalker"></div>
+
     <header class="header">
         <div class="container container--flex">
 

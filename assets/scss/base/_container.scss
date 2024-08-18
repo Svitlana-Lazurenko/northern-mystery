@@ -35,6 +35,7 @@
   .hero > &,
   .main-info > & {
     flex-direction: column;
+
     @include media(md) {
       flex-direction: row;
     }

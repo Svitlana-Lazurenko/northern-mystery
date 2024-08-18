@@ -1,19 +1,19 @@
 .experience {
   color: $color-primary;
   padding: rem(40) 0;
-  @include media(md) {
-    padding: rem(80) 0;
-  }
 }
+
 .work-experience {
   @include media(md) {
     width: 70%;
     padding-left: rem(50);
   }
+
   &__title {
     margin-bottom: rem(50);
     font-size: rem(40);
     color: $color-primary-light;
+
     @include media(sm) {
       font-size: rem(45);
     }
@@ -24,15 +24,16 @@
       font-size: rem(55);
     }
   }
-  &__list {
-  }
+
   &-card {
     &:not(:last-child) {
       margin-bottom: rem(40);
     }
+
     &__title {
       margin-bottom: rem(15);
       font-size: rem(25);
+
       @include media(sm) {
         font-size: rem(35);
       }
@@ -43,6 +44,7 @@
         font-size: rem(30);
       }
     }
+
     &__place {
       display: inline-block;
       background-color: $color-primary-light;
@@ -52,22 +54,28 @@
       margin-right: rem(15);
       font-size: rem(20);
     }
+
     &__time {
       font-size: rem(20);
     }
+
     &-ach {
       margin-top: rem(15);
     }
+
     &-ach__title {
       margin-bottom: rem(5);
       font-size: rem(20);
     }
+
     &-ach__list {
       list-style: circle;
       padding-left: rem(20);
     }
+
     &-ach__item {
       font-size: rem(20);
+
       &:not(:last-child) {
         margin-bottom: rem(5);
       }
@@ -77,14 +85,17 @@
 
 .education {
   margin-top: rem(80);
+
   @include media(md) {
     width: 70%;
     padding-left: rem(50);
   }
+
   &__title {
     margin-bottom: rem(50);
     font-size: rem(40);
     color: $color-primary-light;
+
     @include media(sm) {
       font-size: rem(45);
     }
@@ -95,15 +106,15 @@
       font-size: rem(55);
     }
   }
-  &__list {
-  }
   &-card {
     &:not(:last-child) {
       margin-bottom: rem(40);
     }
+
     &__title {
       margin-bottom: rem(15);
       font-size: rem(25);
+
       @include media(sm) {
         font-size: rem(35);
       }
@@ -114,6 +125,7 @@
         font-size: rem(30);
       }
     }
+
     &__institution {
       display: inline-block;
       background-color: $color-primary-light;
@@ -123,16 +135,20 @@
       margin-right: rem(15);
       font-size: rem(20);
     }
+
     &__time {
       font-size: rem(20);
     }
+
     &-ach {
       margin-top: rem(15);
     }
+
     &-ach__title {
       margin-bottom: rem(5);
       font-size: rem(20);
     }
+
     &-ach__text {
       font-size: rem(20);
     }

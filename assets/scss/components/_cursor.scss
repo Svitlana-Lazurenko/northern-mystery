@@ -1,0 +1,26 @@
+#cursor {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: $color-accent-bright;
+  mix-blend-mode: difference;
+  border-radius: 100%;
+  pointer-events: none;
+  z-index: 1000;
+  transition: transform ease-out 10ms;
+}
+
+#stalker {
+  position: fixed;
+  margin-top: -15px;
+  margin-left: -15px;
+  width: 40px;
+  height: 40px;
+  background-color: $color-accent-extralight;
+  mix-blend-mode: difference;
+  opacity: 30%;
+  border-radius: 100%;
+  pointer-events: none;
+  transition: transform ease-out 150ms;
+  z-index: 999;
+}

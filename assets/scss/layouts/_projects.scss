@@ -1,11 +1,13 @@
 .projects {
   background-color: $color-light;
   padding: rem(100) 0;
+
   &__title {
     font-size: rem(50);
     margin-bottom: rem(70);
     color: $color-primary-light;
     text-align: center;
+
     @include media(psw) {
       font-size: rem(60);
       margin-bottom: rem(100);
@@ -16,6 +18,7 @@
   }
   &__list {
     padding: 0 rem(35);
+
     @include media(md) {
       display: flex;
       justify-content: center;
@@ -32,11 +35,13 @@
   overflow: hidden;
   background-color: $color-accent;
   border: 2px solid $color-accent;
+
   &:not(:last-child) {
     @media (max-width: 767px) {
       margin-bottom: rem(75);
     }
   }
+
   @include media(md) {
     flex-basis: calc((100% - rem(60)) / 2);
   }
@@ -45,20 +50,24 @@
     width: 100%;
     height: 100%;
     display: block;
+
     &:hover .project-card__overlay,
     &:focus .project-card__overlay {
       transform: translateY(0);
     }
   }
+
   &__img-wrapper {
     overflow: hidden;
     position: relative;
   }
+
   &__img {
     aspect-ratio: 16 / 9;
     width: 100%;
     background-color: $color-primary-light;
   }
+
   &__overlay {
     position: absolute;
     top: 0;
@@ -72,15 +81,18 @@
     justify-content: center;
     align-items: center;
     padding: 0 rem(10);
+
     @include media(psw) {
       padding: 0 rem(50);
     }
   }
+
   &__description {
     color: $color-secondary-light;
     text-align: center;
     font-weight: 300;
     font-size: rem(20);
+
     @include media(psw) {
       font-size: rem(25);
     }
@@ -91,12 +103,14 @@
       font-size: rem(30);
     }
   }
+
   &__title {
     text-align: center;
     margin: rem(15) 0;
     color: $color-light;
     transition: color 0.4s linear;
     font-size: rem(20);
+
     @include media(sm) {
       font-size: rem(30);
       margin: rem(20) 0;

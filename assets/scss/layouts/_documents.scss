@@ -1,22 +1,22 @@
 .documents {
   color: $color-primary;
   padding: rem(40) 0 rem(80);
-  @include media(md) {
-    padding: rem(80) 0;
-  }
 
   &__separator {
     height: rem(80);
   }
+
   &__title {
     text-align: center;
     margin-bottom: rem(40);
     font-size: rem(35);
     color: $color-primary-light;
+
     @include media(sm) {
       font-size: rem(45);
     }
   }
+
   &__list {
     @include media(md) {
       display: flex;
@@ -32,11 +32,13 @@
   background-color: $color-secondary-light;
   border-radius: 5px;
   padding: rem(20) rem(10);
+
   &:not(:last-child) {
     @media (max-width: 767px) {
       margin-bottom: rem(40);
     }
   }
+
   @include media(md) {
     flex-basis: calc((100% - rem(120)) / 3);
     display: flex;
@@ -48,12 +50,12 @@
     justify-content: center;
     align-items: center;
     margin-bottom: rem(15);
+
     @include media(md) {
       flex-grow: 1;
     }
   }
-  &__img {
-  }
+
   &__name {
     display: block;
     text-align: center;
@@ -61,6 +63,7 @@
     font-size: rem(20);
     font-weight: 500;
   }
+
   &__institution {
     display: block;
     text-align: center;

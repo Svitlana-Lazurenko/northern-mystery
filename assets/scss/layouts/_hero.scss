@@ -1,6 +1,7 @@
 .hero {
   background-color: $color-primary;
   padding-top: rem(60);
+
   @include media(md) {
     padding-top: 0;
   }
@@ -9,6 +10,7 @@
     padding-left: rem(15);
     padding-right: rem(15);
     margin-bottom: rem(40);
+
     @include media(md) {
       max-width: 45%;
       margin: auto 0;
@@ -19,11 +21,13 @@
     &__greeting {
       margin-bottom: rem(15);
     }
+
     &__greeting--hello {
       font-size: rem(30);
       font-family: $font-base;
       font-weight: 300;
       letter-spacing: rem(2);
+
       @include media(sm) {
         font-size: rem(40);
       }
@@ -40,6 +44,7 @@
         font-size: rem(50);
       }
     }
+
     &__greeting--name {
       font-size: rem(54);
       font-family: $font-base;
@@ -47,6 +52,7 @@
       text-transform: uppercase;
       line-height: 1.1;
       letter-spacing: rem(2);
+
       @include media(sm) {
         font-size: rem(85);
       }
@@ -63,6 +69,7 @@
         font-size: rem(98);
       }
     }
+
     &__specialty {
       font-size: rem(30);
       font-family: $font-accent;
@@ -72,7 +79,6 @@
       @include media(sm) {
         font-size: rem(50);
       }
-
       @include media(md) {
         font-size: rem(25);
       }
@@ -95,6 +101,7 @@
         margin-top: rem(20);
       }
     }
+
     &__info {
       letter-spacing: rem(2);
       font-weight: 300;
@@ -103,7 +110,6 @@
       @include media(sm) {
         font-size: rem(25);
       }
-
       @include media(md) {
         font-size: rem(16);
         margin-bottom: rem(20);
@@ -135,6 +141,7 @@
       bottom: 0.8%;
       border-radius: 50%;
     }
+
     &__tree {
       width: 85%;
       aspect-ratio: 1 / 1;
