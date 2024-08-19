@@ -1,17 +1,17 @@
-(function ($) {
-  class starterTheme {
-    constructor() {
-      this.setupStarterFunction(); // Run the setup function
-    } // constructor
+// (function ($) {
+//   class starterTheme {
+//     constructor() {
+//       this.setupStarterFunction(); // Run the setup function
+//     } // constructor
 
-    setupStarterFunction() {
-      /* Do something here */
-    } // setupStarterFunction
-  } // class starterTheme
+//     setupStarterFunction() {
+//       /* Do something here */
+//     } // setupStarterFunction
+//   } // class starterTheme
 
-  // Create a new instance of the starterTheme class
-  window.starterTheme = new starterTheme();
-})(window.jQuery);
+//   // Create a new instance of the starterTheme class
+//   window.starterTheme = new starterTheme();
+// })(window.jQuery);
 
 // =========================Custom cursor==================================
 const cursor = document.getElementById("cursor");
