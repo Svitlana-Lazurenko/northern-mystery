@@ -7,13 +7,16 @@
   border-radius: 100%;
   pointer-events: none;
   z-index: 1000;
-  transition: transform ease-out 10ms;
+  transition: transform ease-out 0.01s, width 0.5s, height 0.5s;
+  transform: translate(-50%, -50%);
+  &.grow {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 #stalker {
   position: fixed;
-  margin-top: -15px;
-  margin-left: -15px;
   width: 40px;
   height: 40px;
   background-color: $color-accent-extralight;
@@ -21,6 +24,7 @@
   opacity: 30%;
   border-radius: 100%;
   pointer-events: none;
-  transition: transform ease-out 150ms;
+  transition: transform ease-out 0.15s;
   z-index: 999;
+  transform: translate(-50%, -50%);
 }

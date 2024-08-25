@@ -14,16 +14,53 @@
 // })(window.jQuery);
 
 // =========================Custom cursor==================================
+
+const links = Array.from(document.querySelectorAll("a"));
+const submits = Array.from(document.querySelectorAll('input[type="submit"]'));
 const cursor = document.getElementById("cursor");
 const stalker = document.getElementById("stalker");
+
+let mouseX = 0,
+  mouseY = 0;
+let stalkerX = 0,
+  stalkerY = 0;
+
 document.addEventListener("mousemove", (event) => {
-  const x = event.clientX;
-  const y = event.clientY;
-  cursor.style.transform = `translate(${x}px, ${y}px)`;
-  stalker.style.transform = `translate(${x}px, ${y}px)`;
+  mouseX = event.clientX;
+  mouseY = event.clientY;
+  cursor.style.left = `${mouseX}px`;
+  cursor.style.top = `${mouseY}px`;
+});
+
+function animateStalker() {
+  stalkerX += (mouseX - stalkerX) * 0.1;
+  stalkerY += (mouseY - stalkerY) * 0.1;
+  stalker.style.left = `${stalkerX}px`;
+  stalker.style.top = `${stalkerY}px`;
+  requestAnimationFrame(animateStalker);
+}
+animateStalker();
+
+links.forEach((link) => {
+  link.addEventListener("mouseover", () => {
+    cursor.classList.add("grow");
+  });
+  link.addEventListener("mouseleave", () => {
+    cursor.classList.remove("grow");
+  });
+});
+
+submits.forEach((submit) => {
+  submit.addEventListener("mouseover", () => {
+    cursor.classList.add("grow");
+  });
+  submit.addEventListener("mouseleave", () => {
+    cursor.classList.remove("grow");
+  });
 });
 
 // =========================Mobile menu==================================
+
 (() => {
   const mobileMenu = document.querySelector(".js-menu-container");
   const openMenuBtn = document.querySelector(".js-open-menu");
