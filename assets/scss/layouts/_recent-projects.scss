@@ -1,11 +1,12 @@
 .recent-projects {
   padding: rem(100) 0 rem(130);
-  background-color: $color-secondary;
+  background-color: $color-secondary-light;
 
   &__title {
     font-size: rem(58);
     margin-bottom: rem(150);
     text-align: end;
+    color: $color-primary-light;
 
     @include media(psw) {
       font-size: rem(73);
@@ -148,7 +149,7 @@
   }
 
   &__description {
-    color: $color-primary;
+    color: $color-primary-light;
     font-size: rem(25);
 
     @include media(psw) {

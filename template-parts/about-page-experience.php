@@ -10,6 +10,7 @@
                         <?php
                         $position = get_sub_field('position');
                         $place_of_work = get_sub_field('place_of_work');
+                        $about_place_of_work = get_sub_field('about_place_of_work');
                         $start_and_end_of_work = get_sub_field('start_&_end_of_work');
                         ?>
                         <li class="work-experience-card">
@@ -18,11 +19,15 @@
                             <?php endif; ?>
 
                             <?php if ($place_of_work <> '') : ?>
-                                <span class="work-experience-card__place"><?php echo $place_of_work; ?></span>
+                                <span class="work-experience-card__place-of-work"><?php echo $place_of_work; ?></span>
                             <?php endif; ?>
 
                             <?php if ($start_and_end_of_work <> '') : ?>
                                 <span class="work-experience-card__time"><?php echo $start_and_end_of_work; ?></span>
+                            <?php endif; ?>
+
+                            <?php if ($about_place_of_work <> '') : ?>
+                                <div class="work-experience-card__about-place-of-work"><?php echo $about_place_of_work; ?></div>
                             <?php endif; ?>
 
 
@@ -63,6 +68,7 @@
                         <?php while (have_rows('education')) : the_row();
                             $specialty_education = get_sub_field('specialty-education');
                             $educational_institution = get_sub_field('educational_institution');
+                            $about_educational_institution = get_sub_field('about_educational_institution');
                             $start_and_end_of_education = get_sub_field('start_&_end_of_education');
                             $achievments = get_sub_field('achievments');
                         ?>
@@ -77,6 +83,10 @@
 
                                 <?php if ($start_and_end_of_education <> '') : ?>
                                     <span class="education-card__time"><?php echo $start_and_end_of_education; ?></span>
+                                <?php endif; ?>
+
+                                <?php if ($about_educational_institution <> '') : ?>
+                                    <div class="education-card__about-edu-institution"><?php echo $about_educational_institution; ?></div>
                                 <?php endif; ?>
 
                                 <?php if ($achievments <> '') : ?>

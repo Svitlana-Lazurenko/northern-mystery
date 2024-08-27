@@ -44,6 +44,10 @@
     @include media(md) {
       padding: 0 rem(20);
     }
+
+    & a {
+      color: $color-accent-bright;
+    }
   }
 }
 
