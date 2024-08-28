@@ -1,0 +1,13 @@
+<label> Your name
+    [text* your-name autocomplete:name class:contact-form__input] </label>
+
+<label> Your email
+    [email* your-email autocomplete:email class:contact-form__input] </label>
+
+<label> Subject
+    [text* your-subject autocomplete:off class:contact-form__input] </label>
+
+<label> Your message (optional)
+    [textarea your-message autocomplete:off class:contact-form__input--textarea] </label>
+
+[submit class:btn class:btn--secondary "Submit"]

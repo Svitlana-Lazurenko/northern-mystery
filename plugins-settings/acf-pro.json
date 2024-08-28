@@ -1,0 +1,1531 @@
+[
+    {
+        "key": "group_669bb05b79a84",
+        "title": "Main Info",
+        "fields": [
+            {
+                "key": "field_669bb6d65f6c8",
+                "label": "Name",
+                "name": "name",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_669bb05bd5951",
+                "label": "Description",
+                "name": "description",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "Brief description of you as a specialist.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "rows": 4,
+                "placeholder": "",
+                "new_lines": ""
+            },
+            {
+                "key": "field_669bb7455f6c9",
+                "label": "Photo",
+                "name": "photo",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "The image format must be 0.8x1.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "preview_size": "medium"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "about-page.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "Information about specialist",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_669bc8f7d4a6f",
+        "title": "Project",
+        "fields": [
+            {
+                "key": "field_669bc8f7d1411",
+                "label": "Name of project",
+                "name": "name_of_project",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_669bc9d4d1412",
+                "label": "Type of project",
+                "name": "type_of_project",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_669d2aac8f398",
+                "label": "Image of project",
+                "name": "image_of_project",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "The image format must be 16x9.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "preview_size": "medium"
+            },
+            {
+                "key": "field_669bc9ffd1413",
+                "label": "Description of project",
+                "name": "description_of_project",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "Note: To separate paragraphs, insert a blank line.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "rows": 6,
+                "placeholder": "",
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_669bca68d1414",
+                "label": "Responsibilities",
+                "name": "responsibilities",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "Description of the works performed by specialist. Note: To separate paragraphs, insert a blank line.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "rows": 6,
+                "placeholder": "",
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_669bcf00d1415",
+                "label": "Technologies",
+                "name": "technologies",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "Technologies used by specialist.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "table",
+                "pagination": 0,
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "button_label": "Add a technology",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_669bcf19d1416",
+                        "label": "Technology",
+                        "name": "technology",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_669bcf00d1415"
+                    }
+                ]
+            },
+            {
+                "key": "field_669bcf72d1417",
+                "label": "Studio or company",
+                "name": "studio_or_company",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "The studio or company in which specialist performed this project. You can specify freelance.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_669bd269d1418",
+                "label": "Link to project",
+                "name": "link_to_project",
+                "aria-label": "",
+                "type": "link",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_template",
+                    "operator": "==",
+                    "value": "single-project.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "Information about project",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_669cf8b138c97",
+        "title": "Theme General Settings",
+        "fields": [
+            {
+                "key": "field_669cf8b2d4e84",
+                "label": "Logo",
+                "name": "logo",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "The image format must be 2,4x1.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "preview_size": "medium"
+            },
+            {
+                "key": "field_669cf90ed4e85",
+                "label": "Text",
+                "name": "text",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "Any text (e.g., tagline, quote, call to action). This text will appear in the footer.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "rows": 6,
+                "placeholder": "",
+                "new_lines": ""
+            },
+            {
+                "key": "field_66a910dcc21a8",
+                "label": "Resume",
+                "name": "resume",
+                "aria-label": "",
+                "type": "file",
+                "instructions": "File of resume",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "library": "all",
+                "min_size": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_669cf9d2d4e86",
+                "label": "Contacts",
+                "name": "contacts",
+                "aria-label": "",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_669cf9eed4e87",
+                        "label": "Phone",
+                        "name": "phone",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_669cfa10d4e88",
+                        "label": "Email",
+                        "name": "email",
+                        "aria-label": "",
+                        "type": "email",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_669d01285ab3c",
+                        "label": "Skype",
+                        "name": "skype",
+                        "aria-label": "",
+                        "type": "url",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_669cfa99d4e8b",
+                        "label": "WhatsApp",
+                        "name": "whatsapp",
+                        "aria-label": "",
+                        "type": "url",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_669cfac6d4e8d",
+                        "label": "Telegram",
+                        "name": "telegram",
+                        "aria-label": "",
+                        "type": "url",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_669cfab1d4e8c",
+                        "label": "Viber",
+                        "name": "viber",
+                        "aria-label": "",
+                        "type": "url",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_669cfa33d4e89",
+                        "label": "LinkedIn",
+                        "name": "linkedin",
+                        "aria-label": "",
+                        "type": "url",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_669cfa83d4e8a",
+                        "label": "GitHub",
+                        "name": "github",
+                        "aria-label": "",
+                        "type": "url",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_669d01525ab3e",
+                        "label": "Facebook",
+                        "name": "facebook",
+                        "aria-label": "",
+                        "type": "url",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_669d013b5ab3d",
+                        "label": "Instagram",
+                        "name": "instagram",
+                        "aria-label": "",
+                        "type": "url",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "theme-general-settings"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "Theme general settings",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_669b8a300901e",
+        "title": "Welcome Info",
+        "fields": [
+            {
+                "key": "field_669b8a309b2c2",
+                "label": "Name",
+                "name": "name-welcome",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_669b8b3c9b2c3",
+                "label": "Specialty",
+                "name": "specialty-welcome",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_669b8c9e9b2c4",
+                "label": "Information",
+                "name": "info-welcome",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "Brief information about yourself.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "rows": 4,
+                "placeholder": "",
+                "new_lines": ""
+            },
+            {
+                "key": "field_669b8db39b2c5",
+                "label": "Photo",
+                "name": "photo-welcome",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "Upload your photo with transparent background. The image format must be 1x1.06.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "preview_size": "medium"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "home-page.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "Welcome information",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_669ba4db5ef68",
+        "title": "Selected Skills",
+        "fields": [
+            {
+                "key": "field_669e351ba0537",
+                "label": "Skills",
+                "name": "skills",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "table",
+                "pagination": 0,
+                "min": 8,
+                "max": 8,
+                "collapsed": "",
+                "button_label": "Add a skill",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_669e3585a0539",
+                        "label": "Name of skill",
+                        "name": "name_of_skill",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_669e351ba0537"
+                    },
+                    {
+                        "key": "field_669e35c6a053a",
+                        "label": "Image of skill",
+                        "name": "image_of_skill",
+                        "aria-label": "",
+                        "type": "image",
+                        "instructions": "The image format must be 1x1.",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": "",
+                        "preview_size": "medium",
+                        "parent_repeater": "field_669e351ba0537"
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "home-page.php"
+                }
+            ]
+        ],
+        "menu_order": 1,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "Selected skills",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_669bc5ea6f9dc",
+        "title": "Skills",
+        "fields": [
+            {
+                "key": "field_669bc5eabd0c2",
+                "label": "Skills",
+                "name": "skills",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "table",
+                "pagination": 0,
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "button_label": "Add a skill",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_669bc635bd0c3",
+                        "label": "Skill",
+                        "name": "skill",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_669bc5eabd0c2"
+                    }
+                ]
+            },
+            {
+                "key": "field_669bc67bbd0c4",
+                "label": "Languages",
+                "name": "languages",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "table",
+                "pagination": 0,
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "button_label": "Add a language",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_669d17a890973",
+                        "label": "Name of language",
+                        "name": "name_of_language",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_669bc67bbd0c4"
+                    },
+                    {
+                        "key": "field_669d180c90974",
+                        "label": "Level of language",
+                        "name": "level_of_language",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_669bc67bbd0c4"
+                    }
+                ]
+            },
+            {
+                "key": "field_669bc6f9bd0c6",
+                "label": "I have practice in",
+                "name": "i_have_practice_in",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "table",
+                "pagination": 0,
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "button_label": "Add a skill description",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_669bc776bd0c7",
+                        "label": "Skill description",
+                        "name": "skill_description",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_669bc6f9bd0c6"
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "about-page.php"
+                }
+            ]
+        ],
+        "menu_order": 1,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "Skills",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_669bbc8d1ea91",
+        "title": "Experience",
+        "fields": [
+            {
+                "key": "field_669bbc8de3deb",
+                "label": "Work experience",
+                "name": "work_experience",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "pagination": 0,
+                "min": 0,
+                "max": 0,
+                "collapsed": "field_669bbd59e3ded",
+                "button_label": "Add a work",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_669bbd59e3ded",
+                        "label": "Position",
+                        "name": "position",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_669bbc8de3deb"
+                    },
+                    {
+                        "key": "field_669bbe1ae3def",
+                        "label": "Place of work",
+                        "name": "place_of_work",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "You can specify freelance.",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_669bbc8de3deb"
+                    },
+                    {
+                        "key": "field_66cdfdb93603f",
+                        "label": "About place of work",
+                        "name": "about_place_of_work",
+                        "aria-label": "",
+                        "type": "textarea",
+                        "instructions": "Description of the place of work (studio, company, etc.).",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "rows": 4,
+                        "placeholder": "",
+                        "new_lines": "wpautop",
+                        "parent_repeater": "field_669bbc8de3deb"
+                    },
+                    {
+                        "key": "field_669bbe86e3df0",
+                        "label": "Start & end of work",
+                        "name": "start_&_end_of_work",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_669bbc8de3deb"
+                    },
+                    {
+                        "key": "field_669bbce3e3dec",
+                        "label": "Responsibilities & achievements",
+                        "name": "responsibilities_&_achievements",
+                        "aria-label": "",
+                        "type": "repeater",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "layout": "table",
+                        "min": 0,
+                        "max": 0,
+                        "collapsed": "",
+                        "button_label": "Add responsibility or achievement",
+                        "rows_per_page": 20,
+                        "sub_fields": [
+                            {
+                                "key": "field_669bbde8e3dee",
+                                "label": "Responsibility or achievement",
+                                "name": "responsibility_or_achievement",
+                                "aria-label": "",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "maxlength": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "parent_repeater": "field_669bbce3e3dec"
+                            }
+                        ],
+                        "parent_repeater": "field_669bbc8de3deb"
+                    }
+                ]
+            },
+            {
+                "key": "field_669bc4f61d4ec",
+                "label": "Show education",
+                "name": "show_education",
+                "aria-label": "",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Show education",
+                "default_value": 1,
+                "ui_on_text": "",
+                "ui_off_text": "",
+                "ui": 1
+            },
+            {
+                "key": "field_669bbf10e3df1",
+                "label": "Education",
+                "name": "education",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_669bc4f61d4ec",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "pagination": 0,
+                "min": 0,
+                "max": 0,
+                "collapsed": "field_669bbf2de3df2",
+                "button_label": "Add a education",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_669bbf2de3df2",
+                        "label": "Specialty",
+                        "name": "specialty-education",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "You can specify the name of the training course.",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_669bbf10e3df1"
+                    },
+                    {
+                        "key": "field_669bbfd6e3df3",
+                        "label": "Educational institution",
+                        "name": "educational_institution",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "You can specify the name of the studio or company where the internship took place.",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_669bbf10e3df1"
+                    },
+                    {
+                        "key": "field_66ce00f236040",
+                        "label": "About educational institution",
+                        "name": "about_educational_institution",
+                        "aria-label": "",
+                        "type": "textarea",
+                        "instructions": "Description of the educational istitution.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "rows": 4,
+                        "placeholder": "",
+                        "new_lines": "wpautop",
+                        "parent_repeater": "field_669bbf10e3df1"
+                    },
+                    {
+                        "key": "field_669bc018e3df4",
+                        "label": "Start & end of education",
+                        "name": "start_&_end_of_education",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_669bbf10e3df1"
+                    },
+                    {
+                        "key": "field_669bc05fe3df5",
+                        "label": "Achievments",
+                        "name": "achievments",
+                        "aria-label": "",
+                        "type": "textarea",
+                        "instructions": "Note: To separate paragraphs, insert a blank line.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "rows": 6,
+                        "placeholder": "",
+                        "new_lines": "wpautop",
+                        "parent_repeater": "field_669bbf10e3df1"
+                    }
+                ]
+            },
+            {
+                "key": "field_66ab7e299b479",
+                "label": "Show diplomas",
+                "name": "show_diplomas",
+                "aria-label": "",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Show diplomas",
+                "default_value": 1,
+                "ui_on_text": "Yes",
+                "ui_off_text": "No",
+                "ui": 1
+            },
+            {
+                "key": "field_66ab7f899b47a",
+                "label": "Diplomas",
+                "name": "diplomas",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_66ab7e299b479",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "pagination": 0,
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "button_label": "Add diploma",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_66ab7f9f9b47c",
+                        "label": "File of diploma",
+                        "name": "file_of_diploma",
+                        "aria-label": "",
+                        "type": "file",
+                        "instructions": "File must only be in PDF, PNG or JPG format.",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "library": "all",
+                        "min_size": "",
+                        "max_size": "",
+                        "mime_types": "pdf, png, jpg",
+                        "parent_repeater": "field_66ab7f899b47a"
+                    },
+                    {
+                        "key": "field_66ab7fa59b47d",
+                        "label": "Specialty",
+                        "name": "diploma-specialty",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_66ab7f899b47a"
+                    },
+                    {
+                        "key": "field_66ab7fa89b47e",
+                        "label": "Institution that issued the diploma",
+                        "name": "diploma-institution",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_66ab7f899b47a"
+                    }
+                ]
+            },
+            {
+                "key": "field_66ab81aa9b47f",
+                "label": "Show certificates",
+                "name": "show_certificates",
+                "aria-label": "",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Show certificates",
+                "default_value": 1,
+                "ui_on_text": "Yes",
+                "ui_off_text": "No",
+                "ui": 1
+            },
+            {
+                "key": "field_66ab81af9b480",
+                "label": "Certificates",
+                "name": "certificates",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_66ab81aa9b47f",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "pagination": 0,
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "button_label": "Add certificate",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_66ab81af9b482",
+                        "label": "File of certificate",
+                        "name": "file_of_certificate",
+                        "aria-label": "",
+                        "type": "file",
+                        "instructions": "File must only be in PDF, PNG or JPG format.",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "library": "all",
+                        "min_size": "",
+                        "max_size": "",
+                        "mime_types": "pdf, png, jpg",
+                        "parent_repeater": "field_66ab81af9b480"
+                    },
+                    {
+                        "key": "field_66ab81af9b483",
+                        "label": "Specialty",
+                        "name": "certificate-specialty",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "Specialty or name of course\/training.",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_66ab81af9b480"
+                    },
+                    {
+                        "key": "field_66ab81af9b484",
+                        "label": "Institution that issued the certificate",
+                        "name": "certificate-institution",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_66ab81af9b480"
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "about-page.php"
+                }
+            ]
+        ],
+        "menu_order": 2,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "Work experience and education",
+        "show_in_rest": 0
+    }
+]

@@ -55,14 +55,11 @@
 
   &__name-link {
     color: $color-primary-light;
-    background-color: transparent;
-    transition: background-color 0.5s linear;
-    padding: 0 rem(10);
-    border-radius: 3px;
+    transition: color 0.2s linear;
 
     &:hover,
     &:focus {
-      background-color: $color-secondary-light;
+      color: $color-accent-bright;
     }
   }
 }

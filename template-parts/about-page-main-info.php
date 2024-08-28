@@ -26,7 +26,7 @@
             <?php endif; ?>
         </div>
 
-        <div class="skills">
+        <div id="skills" class="skills">
 
             <?php if (have_rows('skills')) : ?>
                 <div class="mini-skills">

@@ -23,7 +23,7 @@
             </ul>
         <?php endif; ?>
 
-        <a class="btn btn--primary" href="<?php echo home_url() . '/about'; ?>">More skills</a>
+        <a class="btn btn--primary" href="<?php echo home_url() . '/about#skills'; ?>">More skills</a>
 
     </div>
 </section>
