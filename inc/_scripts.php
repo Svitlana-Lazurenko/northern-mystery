@@ -11,7 +11,6 @@ function theme_scritps()
     );
 
     //Scripts
-    // wp_enqueue_script('jquery');
     wp_enqueue_script(
         'theme-script',
         get_template_directory_uri() . '/assets/js/app.min.js',
