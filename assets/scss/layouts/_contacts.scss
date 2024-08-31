@@ -41,6 +41,10 @@
   }
 
   &__contacts {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(15);
+
     @media (max-width: 767px) {
       margin-bottom: rem(70);
     }
@@ -50,16 +54,17 @@
     display: flex;
     align-items: center;
     gap: rem(10);
-    margin-bottom: rem(15);
   }
 
   &__name-link {
     color: $color-primary-light;
-    transition: color 0.2s linear;
+    transition: background-color 0.4s linear;
+    padding: rem(10) rem(10);
+    border-radius: 25px;
 
     &:hover,
     &:focus {
-      color: $color-accent-bright;
+      background-color: $color-secondary-light;
     }
   }
 }

@@ -15,6 +15,7 @@
                 <?php foreach ($post_projects as $post) :
                     setup_postdata($post);
                 ?>
+
                     <div class="recent-project">
                         <div class="recent-project__text-wrapper">
                             <h3 class="recent-project__title">
@@ -32,6 +33,7 @@
                             <img class="recent-project__img" src="<?php echo $imgUrl ?>" alt="<?php echo $imgAlt; ?>" />
                         </a>
                     </div>
+
 
                 <?php
                 endforeach;

@@ -54,12 +54,12 @@
   &:nth-child(2)::after {
     width: 19%;
     right: 0;
-    background-image: url("../images/herb-5.webp");
+    background-image: url("../images/herb-2.webp");
   }
 
   &:nth-child(3)::before {
     width: 16%;
-    background-image: url("../images/herb-7.webp");
+    background-image: url("../images/herb-3.webp");
   }
 
   &:not(:last-child) {
@@ -98,14 +98,6 @@
 
     & .recent-project__title::after {
       margin-left: auto;
-    }
-  }
-
-  &:hover,
-  &:focus {
-    .recent-project__img {
-      transform: scale(1.05);
-      filter: saturate(2);
     }
   }
 
@@ -180,5 +172,11 @@
     transition: linear 0.5s;
     background-color: $color-primary-light;
     aspect-ratio: 16 / 9;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.05);
+      filter: saturate(2);
+    }
   }
 }
