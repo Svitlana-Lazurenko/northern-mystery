@@ -138,6 +138,12 @@
 
   &__title-link {
     color: $color-primary;
+    transition: color 0.4s linear;
+
+    &:hover,
+    &:focus {
+      color: $color-primary-light;
+    }
   }
 
   &__description {
