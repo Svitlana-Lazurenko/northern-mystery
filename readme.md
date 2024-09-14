@@ -48,7 +48,7 @@ Done! Enjoy the "Northern Mystery" theme by svitlasvit :)
 
 - npm install - installs npm-dependencies into the project. After this, the node_modules directory and the package-lock.json file will appear in the project root.
 
-- npm run build - launches Gulp. After this, the files assets/js/app.min.js, assets/scss/app.min.css, assets/scss/app.min.css.map will appear in the project.
+- npm run build - launches Gulp. At the same time, the files assets/js/app.min.js, assets/scss/app.min.css, assets/scss/app.min.css.map will appear in the project.
 
 ## Credits
 
