@@ -20,6 +20,7 @@ get_header(); ?>
                             <?php $phone = get_sub_field('phone'); ?>
                             <?php $email = get_sub_field('email'); ?>
                             <?php $linkedin = get_sub_field('linkedin'); ?>
+                            <?php $djinni = get_sub_field('djinni'); ?>
                             <?php $github = get_sub_field('github'); ?>
                             <?php $facebook = get_sub_field('facebook'); ?>
                             <?php $instagram = get_sub_field('instagram'); ?>
@@ -98,6 +99,16 @@ get_header(); ?>
                                     </a>
                                 </div>
                             <?php endif; ?>
+                            <?php if ($djinni <> '') : ?>
+                                <div class="contacts__contact-wrapper">
+                                    <a class="contacts-img-link contacts-img-link--djinni" href="<?php echo $djinni; ?>" target="_blank" rel="noopener noreferrer">
+                                        <img class="contacts-img" src="<?php echo get_template_directory_uri() . '/assets/svg/djinni.svg'; ?>" alt="Djinni." />
+                                    </a>
+                                    <a class="contacts__name-link" href="<?php echo $djinni; ?>" target="_blank" rel="noopener noreferrer">
+                                        <span class="contacts__name">Djinni</span>
+                                    </a>
+                                </div>
+                            <?php endif; ?>
                             <?php if ($github <> '') : ?>
                                 <div class="contacts__contact-wrapper">
                                     <a class="contacts-img-link contacts-img-link--github" href="<?php echo $github; ?>" target="_blank" rel="noopener noreferrer">
@@ -133,7 +144,10 @@ get_header(); ?>
                     </div>
                 <?php endif; ?>
 
-                <?php echo apply_shortcodes('[contact-form-7 id="30d47f5" title="Contact form" html_class="contact-form"]') ?>
+                <?php // Shortcode for Contact Form 7 
+                ?>
+                <?php // echo apply_shortcodes('[contact-form-7 id="" title="" html_class="contact-form"]') 
+                ?>
             </div>
 
         </div>

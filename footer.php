@@ -11,6 +11,7 @@
                 <?php $phone = get_sub_field('phone'); ?>
                 <?php $email = get_sub_field('email'); ?>
                 <?php $linkedin = get_sub_field('linkedin'); ?>
+                <?php $djinni = get_sub_field('djinni'); ?>
                 <?php $github = get_sub_field('github'); ?>
                 <?php $facebook = get_sub_field('facebook'); ?>
                 <?php $instagram = get_sub_field('instagram'); ?>
@@ -55,6 +56,11 @@
                         <img class="contacts-img" src="<?php echo get_template_directory_uri() . '/assets/svg/linkedin.svg'; ?>" alt="LinkedIn." />
                     </a>
                 <?php endif; ?>
+                <?php if ($djinni <> '') : ?>
+                    <a class="contacts-img-link contacts-img-link--djinni" href="<?php echo $djinni; ?>" target="_blank" rel="noopener noreferrer">
+                        <img class="contacts-img" src="<?php echo get_template_directory_uri() . '/assets/svg/djinni.svg'; ?>" alt="Djinni." />
+                    </a>
+                <?php endif; ?>
                 <?php if ($github <> '') : ?>
                     <a class="contacts-img-link contacts-img-link--github" href="<?php echo $github; ?>" target="_blank" rel="noopener noreferrer">
                         <img class="contacts-img" src="<?php echo get_template_directory_uri() . '/assets/svg/github.svg'; ?>" alt="GitHub." />
@@ -75,7 +81,7 @@
         </div>
     <?php endif; ?>
 
-    <p id="signature">Developed with ❤️ by <a id="signature-link" href="https://svitlasvit.great-site.net/" target="_blank" rel="noopener noreferrer">Svitlana Lazurenko (svitlasvit)</a></p>
+    <p id="signature">Developed with ❤️ by <a id="signature-link" href="https://svitlasvit.pp.ua" target="_blank" rel="noopener noreferrer">Svitlana Lazurenko (svitlasvit)</a></p>
 </footer>
 
 <div class="menu-container js-menu-container" aria-hidden="true">

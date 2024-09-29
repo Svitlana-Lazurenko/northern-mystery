@@ -1,8 +1,8 @@
 # Northern Mystery
 
 - Author: svitlasvit
-- Author URI: https://svitlasvit.great-site.net/
-- Description: WordPress-theme for personal portfolio
+- Author URI: https://svitlasvit.pp.ua
+- Description: WordPress-theme for personal portfolio. It was created under the inspiration of the beauty of northern nature.
 - Tags: portfolio
 - Version: 1.0.0
 - Requires at least: 6.6
@@ -29,8 +29,6 @@ The theme was created with love and care, I hope you will like it too :)
 - In the Admin Menu -> Appearance -> Themes, find the "Northern Mystery" theme and activate it.
 - Install and activate the ACF PRO plugin. This can be done through Admin Menu -> Plugins -> Add New Plugin. You can also download the plugin from the official website of this plugin.
 - Go to Admin Menu -> ACF -> Tools -> Import, select the "acf-pro.json" file from the "plugins-settings" folder and install settings of ACF PRO by clicking the "Import JSON" button.
-- Install and activate the Contact Form 7 plugin. This can be done through Admin Menu -> Plugins -> Add New Plugin. You can also download the plugin from the official website of this plugin.
-- In Admin Menu -> Contact -> Contact Forms, you will see the form automatically created by the Contact Form 7 plugin. You can leave it or create your own. Select the "Editing" action for the selected form, go to the "Form" tab and paste the code from the "contact-form-7.txt" file, which is located in the "plugins-settings" folder, into the input field. You can edit the settings that are in the other tabs of the form as you wish or leave them as is.
 
 Note: The "plugins-settings" folder is located directly in the "northern-mystery" folder.
 
@@ -50,6 +48,17 @@ Done! Enjoy the "Northern Mystery" theme by svitlasvit :)
 
 - npm run build - launches Gulp. At the same time, the files assets/js/app.min.js, assets/scss/app.min.css, assets/scss/app.min.css.map will appear in the project.
 
+#### Contact Form 7:
+
+The theme contains code for Contact Form 7. Important note - the form has not been tested.
+In order for the form to appear on the site, you must perform the following steps:
+
+- Install and activate the Contact Form 7 plugin. This can be done through Admin Menu -> Plugins -> Add New Plugin. You can also download the plugin from the official website of this plugin.
+- In Admin Menu -> Contact -> Contact Forms, you will see the form automatically created by the Contact Form 7 plugin. You can use it or create your own. Select the "Editing" action for the selected form, go to the "Form" tab and paste the code from the "contact-form-7.txt" file, which is located in the "plugins-settings" folder, into the input field. On this same tab, pay attention to the shortcode, or rather to its data in "id" and "title". Remember this data. You can edit the settings that are in the other tabs of the form as you wish.
+- Uncomment the line with the shortcode in the contacts-page.php file. Paste the data you remembered in the previous step into the "id" and "title" of this shortcode.
+
+Note: The "plugins-settings" folder is located directly in the "northern-mystery" folder.
+
 ## Credits
 
 ### Images
@@ -63,6 +72,7 @@ Done! Enjoy the "Northern Mystery" theme by svitlasvit :)
 - "menu-hamburger.svg", "cross.svg", "email.svg", "phone.svg" from collection [Smoothie Line Icons Collection](https://www.svgrepo.com/collection/smoothie-line-icons) by [Luka Marr](https://www.svgrepo.com/author/Luka%20Marr), licensed under CC Attribution License ( License Summary is [here](https://www.svgrepo.com/page/licensing/#CC%20Attribution) ). Resources was modified by svitlasvit.
 - "instagram.svg", "facebook.svg" from collection [Social Networks Logos 2 Collection](https://www.svgrepo.com/collection/social-networks-logos-2) by unknown Author, licensed under CC0 License ( License Summary is [here](https://www.svgrepo.com/page/licensing/#CC0) ). Resources was modified by svitlasvit.
 - "github.svg", "linkedin.svg", "skype.svg", "telegram.svg", "viber.svg", "whatsapp.svg" from collection [Colored Interface And Logo Icons Collection](https://www.svgrepo.com/collection/colored-interface-and-logo-icons) by [Garuda Technology](https://www.svgrepo.com/author/Garuda%20Technology), licensed under MIT License (License Summary is [here](https://www.svgrepo.com/page/licensing/#MIT) ). Resources was modified by svitlasvit.
+- "djinni.svg" by unknown Author, licensed under unknown license. Resources was modified by svitlasvit.
 
 ### Fonts
 
