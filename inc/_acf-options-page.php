@@ -1,4 +1,7 @@
 <?php
+if (!defined('ABSPATH')) exit; ?>
+
+<?php
 // Register ACF options page
 
 if (function_exists('acf_add_options_page')) {

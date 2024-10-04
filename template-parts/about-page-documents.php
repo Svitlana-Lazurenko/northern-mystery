@@ -1,3 +1,6 @@
+<?php
+if (!defined('ABSPATH')) exit; ?>
+
 <section class="documents">
     <div class="container">
 

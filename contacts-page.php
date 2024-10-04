@@ -1,4 +1,7 @@
 <?php
+if (!defined('ABSPATH')) exit; ?>
+
+<?php
 /*
 Template Name: Contacts Page
 Template Post Type: page

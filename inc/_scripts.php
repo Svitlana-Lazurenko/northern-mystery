@@ -1,4 +1,7 @@
 <?php
+if (!defined('ABSPATH')) exit; ?>
+
+<?php
 add_action('wp_enqueue_scripts', 'theme_scritps');
 function theme_scritps()
 {

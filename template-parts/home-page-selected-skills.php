@@ -1,3 +1,6 @@
+<?php
+if (!defined('ABSPATH')) exit; ?>
+
 <section class="selected-skills">
     <div class="container">
 

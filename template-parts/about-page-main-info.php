@@ -1,3 +1,6 @@
+<?php
+if (!defined('ABSPATH')) exit; ?>
+
 <section class="main-info">
     <div class="container container--flex">
 

@@ -1,4 +1,7 @@
 <?php
+if (!defined('ABSPATH')) exit; ?>
+
+<?php
 
 function register_post_types()
 {

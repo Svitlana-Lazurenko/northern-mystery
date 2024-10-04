@@ -1,4 +1,7 @@
 <?php
+if (!defined('ABSPATH')) exit; ?>
+
+<?php
 /*
 Template Name: Project Page
 Template Post Type: project

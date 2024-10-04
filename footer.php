@@ -1,3 +1,6 @@
+<?php
+if (!defined('ABSPATH')) exit; ?>
+
 <footer class="footer">
 
     <?php $text = get_field('text', 'option'); ?>
