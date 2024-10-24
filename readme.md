@@ -4,7 +4,7 @@
 - Author URI: https://svitlasvit.pp.ua
 - Description: WordPress-theme for personal portfolio. It was created under the inspiration of the beauty of northern nature.
 - Tags: portfolio
-- Version: 1.0.0
+- Version: 1.0.1
 - Requires at least: 6.6
 - Tested up to: 6.6
 - Requires PHP: 8.1
@@ -82,3 +82,10 @@ Note: The "plugins-settings" folder is located directly in the "northern-mystery
 ### Special Thanks
 
 - Special thanks to the open source community and everyone else who made this theme possible.
+
+## Logs
+
+### v. 1.0.1
+
+- Updated instructions of some ACF fields.
+- Text in the footer "Developed with ❤️ by Svitlana Lazurenko (svitlasvit)" has been updated to "Designed and developed with ❤️ by Svitlana Lazurenko (svitlasvit)".

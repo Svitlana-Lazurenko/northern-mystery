@@ -84,7 +84,7 @@ if (!defined('ABSPATH')) exit; ?>
         </div>
     <?php endif; ?>
 
-    <p id="signature">Developed with ❤️ by <a id="signature-link" href="https://svitlasvit.pp.ua" target="_blank" rel="noopener noreferrer">Svitlana Lazurenko (svitlasvit)</a></p>
+    <p id="signature">Designed and developed with ❤️ by <a id="signature-link" href="https://svitlasvit.pp.ua" target="_blank" rel="noopener noreferrer">Svitlana Lazurenko (svitlasvit)</a></p>
 </footer>
 
 <div class="menu-container js-menu-container" aria-hidden="true">
