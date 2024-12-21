@@ -11,6 +11,8 @@
 - License: GNU General Public License v2 or later
 - License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
+![Northern Mystery Theme. Screenshot](/screenshots/northern-mystery.png)
+
 ## Description
 
 Theme "Northern Mystery" - WordPress theme for creating a personal portfolio. This theme is suitable for creating a portfolio for specialists in any field, but is especially suitable for IT specialists.
@@ -25,17 +27,18 @@ The theme was created with love and care, I hope you will like it too :)
 
 ### Installation
 
-- Place the "northern-mystery" folder in the themes folder of your WordPress project.
-- In the Admin Menu -> Appearance -> Themes, find the "Northern Mystery" theme and activate it.
-- Install and activate the ACF PRO plugin. This can be done through Admin Menu -> Plugins -> Add New Plugin. You can also download the plugin from the official website of this plugin.
-- Go to Admin Menu -> ACF -> Tools -> Import, select the "acf-pro.json" file from the "plugins-settings" folder and install settings of ACF PRO by clicking the "Import JSON" button.
-
-Note: The "plugins-settings" folder is located directly in the "northern-mystery" folder.
+- Download the theme in zip format.
+- In the administrative part of website, go to "Appearance" -> "Themes" -> "Add new theme" -> "Upload theme". Choose the archive and upload it. Activate theme.
+- Install and activate the ACF PRO plugin. This can be done through "Admin Menu" -> "Plugins" -> "Add New Plugin". You can also download the plugin from the official website of this plugin.
+- Go to "Admin Menu" -> "ACF" -> "Tools" -> "Import", select the "acf-pro.json" file from the "plugins-settings" folder and install settings of ACF PRO by clicking the "Import JSON" button. Note: The "plugins-settings" folder is located directly in the root of theme.
+- Create a pages, choosing the "Home Page", "About Page" and "Contacts Page" templates. After creating a page using the template "Home Page" make it the homepage. For this go to "Settings" -> "Reading" -> "Your homepage displays", choose "A static page". In "Homepage" choose a page that was created using the "Home Page" template.
+- Create menus in "Appearance" -> "Menus" ("Header Menu" and "Mobile Menu"). Both menus should have the following items: "Home" (Main page), "Works" (Custom Link "/works"), "About" (Page), "Contacts" (Page).
 
 Done! Enjoy the "Northern Mystery" theme by svitlasvit :)
 
 ### Usage for administrators:
 
+- "Projects" are a Custom Post Type. To add a project, go to "Projects" -> "Add new Project". After this, in the sidebar, select the "Project Page" template.
 - When adding images to the media library, the Alternative Text field should be specified.
 - When adding resume/diploma/certificate files to the media library, the Caption field should be specified. This will be used in the markup as Alternative Text for images of these files. The Alternative Text field itself in the media library should be left empty.
 - When creating a new project page, you should set a featured image and an excerpt.
@@ -59,7 +62,7 @@ In order for the form to appear on the site, you must perform the following step
 
 Note: The "plugins-settings" folder is located directly in the "northern-mystery" folder.
 
-## Credits
+## Resources
 
 ### Images
 
@@ -83,9 +86,13 @@ Note: The "plugins-settings" folder is located directly in the "northern-mystery
 
 - Special thanks to the open source community and everyone else who made this theme possible.
 
-## Logs
+## Changelog
 
 ### v. 1.0.1
 
 - Updated instructions of some ACF fields.
 - Text in the footer "Developed with ❤️ by Svitlana Lazurenko (svitlasvit)" has been updated to "Designed and developed with ❤️ by Svitlana Lazurenko (svitlasvit)".
+
+### v. 1.0.2
+
+- Change readme, add screenhot of theme section.
