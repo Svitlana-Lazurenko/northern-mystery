@@ -68,7 +68,7 @@ $link = get_field('link_to_project');
             </div>
 
             <?php if ($link <> '') : ?>
-                <a class="btn btn--primary" href="<?php echo $link['url']; ?>" target="_blank" rel="noopener noreferrer">Open the project</a>
+                <a class="btn btn--primary" href="<?php echo $link['url']; ?>" target="_blank" rel="noopener noreferrer">Go to the project</a>
             <?php endif; ?>
         </div>
     </section>

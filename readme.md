@@ -96,3 +96,7 @@ Note: The "plugins-settings" folder is located directly in the "northern-mystery
 ### v. 1.0.2
 
 - Change readme, add screenhot of theme section.
+
+### v. 1.0.3
+
+- Change text in the button of project.
